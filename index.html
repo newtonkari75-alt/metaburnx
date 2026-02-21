@@ -17,6 +17,24 @@
         .btn-pulse { animation: pulse-subtle 2s infinite; }
         details summary::-webkit-details-marker { display: none; }
         .ingredient-card:hover img { transform: scale(1.1); transition: transform 0.5s ease; }
+
+        /* Estilo para a faixa de rolagem automática (Desktop) */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-350px * 5)); }
+        }
+        .animate-scroll {
+            display: flex;
+            width: calc(350px * 10);
+            animation: scroll 40s linear infinite;
+        }
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Ajuste para esconder scrollbar no carrossel mobile */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden">
@@ -52,7 +70,7 @@
                 <div class="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-slate-400 font-bold uppercase tracking-widest">
                     <span class="flex items-center gap-2 italic">Resultados Comprovados</span>
                     <span class="hidden md:inline">|</span>
-                    <span class="flex items-center gap-2 text-emerald-600">Distribuidor Autorizado</span>
+                    <span class="flex items-center gap-2 text-emerald-600 font-bold">Distribuidor Autorizado Oficial</span>
                 </div>
             </div>
             <div class="flex-1 relative flex justify-center">
@@ -68,23 +86,101 @@
     </section>
 
     <!-- Authority Badges -->
-    <section class="bg-slate-900 py-12 px-6">
+    <section class="bg-slate-900 py-12 px-6 border-y border-white/5">
         <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="flex flex-col items-center gap-3 group text-center">
                 <img src="images/imgi_22_fda-1-2-1-1-1-1-1.png" alt="FDA Approved" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
-                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Laboratório FDA</p>
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-tight">Laboratório FDA<br>Registrado</p>
             </div>
             <div class="flex flex-col items-center gap-3 group text-center">
                 <img src="images/imgi_23_gmp-1-2-1-1-1-1-1.png" alt="GMP Certified" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
-                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Padrão GMP</p>
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-tight">Certificação<br>Padrão GMP</p>
             </div>
             <div class="flex flex-col items-center gap-3 group text-center">
                 <img src="images/imgi_20_gmo-1-2-1-1-1-1-1.png" alt="GMO Free" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
-                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Livre de Transgênicos</p>
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-tight">Livre de<br>Transgênicos</p>
             </div>
             <div class="flex flex-col items-center gap-3 group text-center">
                 <img src="images/imgi_21_nat-1-1.png" alt="100% Natural" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
-                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Ativos Naturais</p>
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-tight">Ingredientes<br>100% Naturais</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Novo!) -->
+    <section class="py-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 mb-12 text-center md:text-left">
+            <h2 class="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter italic text-slate-900">Histórias Reais de Sucesso</h2>
+            <p class="text-slate-500 font-medium">Veja o que quem já usa o Burn Slim tem a dizer sobre sua jornada.</p>
+        </div>
+
+        <!-- Desktop: Faixa de rolagem automática -->
+        <div class="hidden md:block relative">
+            <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10"></div>
+            
+            <div class="animate-scroll gap-6">
+                <!-- Reviews duplicados para loop infinito -->
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0">
+                    <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">"No começo eu estava cética, mas depois de 3 semanas as roupas começaram a ficar largas. O que mais amei foi a energia, não sinto mais aquele cansaço no meio da tarde."</p>
+                    <div class="font-bold text-slate-800 tracking-tight italic">Juliana R., 34 anos, São Paulo - SP</div>
+                </div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0">
+                    <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">"Finalmente algo que controla minha vontade de comer doce à noite. Perdi 5kg no primeiro mês sem passar fome. Recomendo o kit de 6 frascos pelo custo-benefício."</p>
+                    <div class="font-bold text-slate-800 tracking-tight italic">Ricardo M., 42 anos, Curitiba - PR</div>
+                </div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0">
+                    <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">"Melhor investimento que fiz esse ano. O Burn Slim me ajudou a sair do efeito platô. Minha disposição para treinar dobrou! Sinto o metabolismo trabalhando de verdade."</p>
+                    <div class="font-bold text-slate-800 tracking-tight italic">Fernanda S., 29 anos, Salvador - BA</div>
+                </div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0">
+                    <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">"Senti uma diferença enorme na digestão e no inchaço abdominal. É um processo natural e constante, exatamente como o doutor explicou. Minha saúde geral melhorou."</p>
+                    <div class="font-bold text-slate-800 tracking-tight italic">Carlos T., 50 anos, Brasília - DF</div>
+                </div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0">
+                    <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">"Entrega super rápida e suporte atencioso. O produto cumpre o que promete, me sinto muito mais leve e confiante agora. Vale cada centavo pela qualidade."</p>
+                    <div class="font-bold text-slate-800 tracking-tight italic">Beatriz L., 38 anos, Porto Alegre - RS</div>
+                </div>
+                <!-- Clones para o loop -->
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0"><div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div><p class="text-slate-600 text-sm mb-6 leading-relaxed">"No começo eu estava cética, mas depois de 3 semanas as roupas começaram a ficar largas. O que mais amei foi a energia."</p><div class="font-bold text-slate-800 tracking-tight italic">Juliana R., 34 anos</div></div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0"><div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div><p class="text-slate-600 text-sm mb-6 leading-relaxed">"Finalmente algo que controla minha vontade de comer doce à noite. Perdi 5kg no primeiro mês sem passar fome."</p><div class="font-bold text-slate-800 tracking-tight italic">Ricardo M., 42 anos</div></div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0"><div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div><p class="text-slate-600 text-sm mb-6 leading-relaxed">"Melhor investimento que fiz esse ano. O Burn Slim me ajudou a sair do efeito platô. Minha disposição para treinar dobrou!"</p><div class="font-bold text-slate-800 tracking-tight italic">Fernanda S., 29 anos</div></div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0"><div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div><p class="text-slate-600 text-sm mb-6 leading-relaxed">"Senti uma diferença enorme na digestão e no inchaço abdominal. É um processo natural e constante."</p><div class="font-bold text-slate-800 tracking-tight italic">Carlos T., 50 anos</div></div>
+                <div class="w-[350px] bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 shrink-0"><div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div><p class="text-slate-600 text-sm mb-6 leading-relaxed">"Entrega super rápida e suporte atencioso. O produto cumpre o que promete, me sinto muito mais leve."</p><div class="font-bold text-slate-800 tracking-tight italic">Beatriz L., 38 anos</div></div>
+            </div>
+        </div>
+
+        <!-- Mobile: Carrossel de toque -->
+        <div class="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 px-6 no-scrollbar">
+            <div class="w-[85vw] shrink-0 snap-center bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">"No começo eu estava cética, mas depois de 3 semanas as roupas começaram a ficar largas. O que mais amei foi a energia!"</p>
+                <div class="font-bold text-slate-800 tracking-tight uppercase text-xs">Juliana R., 34 anos</div>
+            </div>
+            <div class="w-[85vw] shrink-0 snap-center bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">"Finalmente algo que controla minha vontade de comer doce à noite. Perdi 5kg no primeiro mês sem passar fome."</p>
+                <div class="font-bold text-slate-800 tracking-tight uppercase text-xs">Ricardo M., 42 anos</div>
+            </div>
+            <div class="w-[85vw] shrink-0 snap-center bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">"O Burn Slim me ajudou a sair do efeito platô. Minha disposição para treinar dobrou! Vale muito a pena."</p>
+                <div class="font-bold text-slate-800 tracking-tight uppercase text-xs">Fernanda S., 29 anos</div>
+            </div>
+            <div class="w-[85vw] shrink-0 snap-center bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">"Senti uma diferença enorme na digestão e no inchaço. Minha saúde geral melhorou muito desde que comecei."</p>
+                <div class="font-bold text-slate-800 tracking-tight uppercase text-xs">Carlos T., 50 anos</div>
+            </div>
+            <div class="w-[85vw] shrink-0 snap-center bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="flex text-orange-400 mb-4 items-center gap-1"><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i></div>
+                <p class="text-slate-600 text-sm mb-6 leading-relaxed italic">"Cumpre o que promete, me sinto muito mais leve. Recomendo para quem quer resultados reais e naturais."</p>
+                <div class="font-bold text-slate-800 tracking-tight uppercase text-xs">Beatriz L., 38 anos</div>
             </div>
         </div>
     </section>
@@ -98,53 +194,30 @@
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Ingredient 1 -->
+                <!-- Ingredient cards... (inalterados) -->
                 <div class="ingredient-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all">
                     <img src="images/Cinnamon Bark Extract.png" alt="Cinnamon Bark" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Cinnamon Bark</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Ajuda a ativar o metabolismo e regula os níveis de açúcar, reduzindo a compulsão por doces.</p>
-                    </div>
+                    <div class="p-6"><h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Cinnamon Bark</h4><p class="text-slate-600 text-sm leading-relaxed">Ajuda a ativar o metabolismo e regula os níveis de açúcar, reduzindo a compulsão por doces.</p></div>
                 </div>
-                <!-- Ingredient 2 -->
                 <div class="ingredient-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all">
                     <img src="images/Bilberry Leaf Extract.png" alt="Bilberry Leaf" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Bilberry Leaf</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Rico em antioxidantes que protegem as células e auxiliam no equilíbrio metabólico.</p>
-                    </div>
+                    <div class="p-6"><h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Bilberry Leaf</h4><p class="text-slate-600 text-sm leading-relaxed">Rico em antioxidantes que protegem as células e auxiliam no equilíbrio metabólico.</p></div>
                 </div>
-                <!-- Ingredient 3 -->
                 <div class="ingredient-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all">
                     <img src="images/Green Tea.png" alt="Green Tea" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Green Tea</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Otimiza a oxidação de gorduras e fornece energia limpa para o seu dia a dia.</p>
-                    </div>
+                    <div class="p-6"><h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Green Tea</h4><p class="text-slate-600 text-sm leading-relaxed">Otimiza a oxidação de gorduras e fornece energia limpa para o seu dia a dia.</p></div>
                 </div>
-                <!-- Ingredient 4 -->
                 <div class="ingredient-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all">
                     <img src="images/Zeaxanthin Extract.png" alt="Zeaxanthin" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Zeaxanthin</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Suporta a saúde celular e contribui para a eficiência na absorção de nutrientes.</p>
-                    </div>
+                    <div class="p-6"><h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Zeaxanthin</h4><p class="text-slate-600 text-sm leading-relaxed">Suporta a saúde celular e contribui para a eficiência na absorção de nutrientes.</p></div>
                 </div>
-                <!-- Ingredient 5 -->
                 <div class="ingredient-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all">
                     <img src="images/Ginkgo Biloba Extract.png" alt="Ginkgo Biloba" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Ginkgo Biloba</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Melhora a circulação sanguínea e auxilia no foco mental durante o emagrecimento.</p>
-                    </div>
+                    <div class="p-6"><h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Ginkgo Biloba</h4><p class="text-slate-600 text-sm leading-relaxed">Melhora a circulação sanguínea e auxilia no foco mental durante o emagrecimento.</p></div>
                 </div>
-                <!-- Ingredient 6 -->
                 <div class="ingredient-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all">
                     <img src="images/Bacopa Monnieri Extract.png" alt="Bacopa Monnieri" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Bacopa Monnieri</h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">Atua no controle do cortisol, combatendo o ganho de peso causado pelo stress.</p>
-                    </div>
+                    <div class="p-6"><h4 class="text-xl font-bold text-emerald-600 uppercase italic mb-2">Bacopa Monnieri</h4><p class="text-slate-600 text-sm leading-relaxed">Atua no controle do cortisol, combatendo o ganho de peso causado pelo stress.</p></div>
                 </div>
             </div>
         </div>
@@ -152,26 +225,12 @@
 
     <!-- Mechanism Section -->
     <section class="py-24 px-6 bg-slate-50 border-y border-slate-100">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-black mb-4 uppercase tracking-tighter italic text-slate-900">Como o BurnSlim Atua?</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-12 text-center">
-                <div>
-                    <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">1</div>
-                    <h4 class="text-xl font-bold mb-3 uppercase italic">Termogénese</h4>
-                    <p class="text-slate-600 text-sm">Aumenta a temperatura interna do corpo para queimar calorias mesmo em repouso.</p>
-                </div>
-                <div>
-                    <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">2</div>
-                    <h4 class="text-xl font-bold mb-3 uppercase italic">Inibição</h4>
-                    <p class="text-slate-600 text-sm">Controla os receptores de fome, prolongando a sensação de saciedade.</p>
-                </div>
-                <div>
-                    <div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">3</div>
-                    <h4 class="text-xl font-bold mb-3 uppercase italic">Energia</h4>
-                    <p class="text-slate-600 text-sm">Converte as reservas de gordura em combustível para o seu cérebro e músculos.</p>
-                </div>
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-16 uppercase tracking-tighter italic text-slate-900">Como o BurnSlim Atua?</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div><div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black shadow-lg">1</div><h4 class="text-xl font-bold mb-3 uppercase italic">Termogénese</h4><p class="text-slate-600 text-sm">Aumenta a temperatura interna do corpo para queimar calorias mesmo em repouso.</p></div>
+                <div><div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black shadow-lg">2</div><h4 class="text-xl font-bold mb-3 uppercase italic">Inibição</h4><p class="text-slate-600 text-sm">Controla os receptores de fome, prolongando a sensação de saciedade.</p></div>
+                <div><div class="w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black shadow-lg">3</div><h4 class="text-xl font-bold mb-3 uppercase italic">Energia</h4><p class="text-slate-600 text-sm">Converte as reservas de gordura em combustível para o seu cérebro e músculos.</p></div>
             </div>
         </div>
     </section>
@@ -180,9 +239,9 @@
     <section id="precos" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase tracking-tighter italic text-slate-900">Selecione o Seu Plano de Transformação</h2>
-                <div class="bg-orange-500 text-white px-8 py-2 rounded-full inline-flex items-center gap-3 font-black text-sm uppercase tracking-widest shadow-lg animate-pulse">
-                    <i data-lucide="clock" class="w-5 h-5"></i> Oferta Expira em: <span id="timer">26:14</span>
+                <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase tracking-tighter italic text-slate-900 text-balance">Selecione o Seu Plano de Transformação</h2>
+                <div class="bg-orange-500 text-white px-8 py-2.5 rounded-full inline-flex items-center gap-3 font-black text-sm uppercase tracking-widest shadow-lg animate-pulse">
+                    <i data-lucide="timer" class="w-5 h-5"></i> Oferta Expira em: <span id="timer">26:14</span>
                 </div>
             </div>
 
@@ -193,7 +252,7 @@
                     <div class="relative mb-8 h-64 flex items-center justify-center">
                         <img src="images/imgi_92_img-2-bottles-300x300.png" alt="Kit 2 Frascos" class="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform">
                     </div>
-                    <div class="mb-6 text-6xl font-black text-slate-900 leading-none">$79</div>
+                    <div class="mb-6 text-6xl font-black text-slate-900 leading-none tracking-tighter">$79<span class="text-sm">/frasco</span></div>
                     <button class="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-slate-800 transition-all shadow-lg mb-4">COMPRAR AGORA</button>
                     <div class="flex items-center justify-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest"><i data-lucide="truck" class="w-4 h-4"></i> + $9.99 Frete</div>
                 </div>
@@ -205,8 +264,8 @@
                     <div class="relative mb-8 h-72 flex items-center justify-center">
                         <img src="images/imgi_15_img-6-bottles.png" alt="Kit 6 Frascos" class="relative z-10 w-full h-full object-contain scale-110 group-hover:scale-115 transition-transform duration-700">
                     </div>
-                    <div class="mb-8 text-8xl font-black text-emerald-600 leading-none">$49</div>
-                    <button class="w-full bg-emerald-600 text-white py-6 rounded-2xl font-black text-xl hover:bg-emerald-700 transition-all shadow-2xl flex items-center justify-center gap-3 uppercase mb-4">QUERO O DESCONTO MÁXIMO <i data-lucide="zap" class="fill-current"></i></button>
+                    <div class="mb-8 text-8xl font-black text-emerald-600 leading-none tracking-tighter">$49<span class="text-xl">/frasco</span></div>
+                    <button class="w-full bg-emerald-600 text-white py-6 rounded-2xl font-black text-xl hover:bg-emerald-700 transition-all shadow-2xl flex items-center justify-center gap-3 uppercase mb-4">QUERO O DESCONTO MÁXIMO <i data-lucide="zap" class="fill-current w-6 h-6"></i></button>
                     <div class="flex items-center justify-center gap-2 text-emerald-600 font-black uppercase text-xs tracking-widest">
                         <img src="images/frete.png" alt="Frete" class="w-8 h-8">
                         FRETE GRÁTIS INCLUSO
@@ -219,9 +278,9 @@
                     <div class="relative mb-8 h-64 flex items-center justify-center">
                         <img src="images/imgi_75_img-3-bottles-300x290.png" alt="Kit 3 Frascos" class="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform">
                     </div>
-                    <div class="mb-6 text-6xl font-black text-slate-900 leading-none">$69</div>
+                    <div class="mb-6 text-6xl font-black text-slate-900 leading-none tracking-tighter">$69<span class="text-sm">/frasco</span></div>
                     <button class="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-slate-800 transition-all shadow-lg mb-4">COMPRAR AGORA</button>
-                    <div class="flex items-center justify-center gap-2 text-emerald-600 font-black uppercase text-xs tracking-widest"><i data-lucide="truck" class="w-4 h-4"></i> FRETE GRÁTIS</div>
+                    <div class="flex items-center justify-center gap-2 text-emerald-600 font-black uppercase text-xs tracking-widest"><i data-lucide="truck" class="w-4 h-4 text-emerald-600"></i> FRETE GRÁTIS</div>
                 </div>
             </div>
         </div>
@@ -231,13 +290,13 @@
     <section class="py-24 px-6 bg-slate-50 border-t border-slate-100">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-16 text-center md:text-left">
             <div class="relative flex-shrink-0">
-                <img src="images/imgi_18_guarantee-badge.png" alt="Garantia" class="w-56 h-56 relative z-10">
+                <img src="images/imgi_18_guarantee-badge.png" alt="Garantia" class="w-56 h-56 relative z-10 drop-shadow-2xl">
                 <div class="absolute inset-0 bg-emerald-500 rounded-full blur-[80px] opacity-10"></div>
             </div>
             <div>
                 <h2 class="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter italic text-slate-800">Compromisso com a Sua Satisfação</h2>
                 <p class="text-slate-600 text-lg leading-relaxed font-medium">
-                    Acreditamos tanto na eficácia do Burn Slim que oferecemos uma garantia incondicional de 60 dias. Se não estiver 100% satisfeito, devolvemos o seu investimento. Sem burocracia, pois confiamos no que entregamos.
+                    Acreditamos tanto na eficácia do Burn Slim que oferecemos uma garantia incondicional de 60 dias. Se não estiver 100% satisfeito com seu novo corpo ou energia, devolvemos o seu investimento. Sem burocracia, pois confiamos no que entregamos.
                 </p>
             </div>
         </div>
@@ -250,12 +309,12 @@
             
             <!-- Authorized Distributor Badge -->
             <div class="mb-10 inline-flex items-center gap-3 bg-white/5 border border-white/10 px-8 py-3 rounded-full text-white font-black uppercase tracking-[0.2em] italic shadow-xl">
-                <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i> 
+                <i data-lucide="award" class="w-5 h-5 text-emerald-500"></i> 
                 Distribuidor Autorizado Oficial
             </div>
 
             <p class="max-w-3xl mx-auto mb-12 leading-relaxed opacity-40">
-                Aviso Legal: Os resultados podem variar de pessoa para pessoa. Este produto não substitui o aconselhamento médico. Burn Slim é um suplemento natural produzido sob os mais altos padrões de qualidade.
+                Aviso Legal: Os resultados podem variar de pessoa para pessoa. Este produto não substitui o aconselhamento médico. Burn Slim é um suplemento natural produzido sob os mais altos padrões de qualidade e transparência.
             </p>
             
             <div class="flex flex-wrap justify-center gap-8 mb-16 uppercase font-black text-[10px] tracking-[0.2em]">
@@ -266,7 +325,7 @@
             </div>
             
             <div class="h-px w-24 bg-white/10 mx-auto mb-10"></div>
-            <p class="uppercase tracking-[0.3em] font-bold opacity-30">© 2026 BurnSlim Research. Todos os direitos reservados.</p>
+            <p class="uppercase tracking-[0.3em] font-bold opacity-30 tracking-widest text-[9px]">© 2026 BurnSlim Research. Todos os direitos reservados.</p>
         </div>
     </footer>
 

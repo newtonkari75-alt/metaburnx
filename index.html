@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BurnSlim Official — nutraplusstore.com</title>
+    <!-- Frameworks de Design (Mantidos para funcionalidade visual) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -17,10 +18,12 @@
         body { font-family: 'Manrope', sans-serif; scroll-behavior: smooth; }
         .font-poppins { font-family: 'Poppins', sans-serif; }
         
+        /* Gradiente do Topo */
         .hero-gradient {
             background: linear-gradient(135deg, #215E91 0%, #0D2E4D 100%);
         }
 
+        /* Cartões de Preço */
         .price-card {
             transition: all 0.3s ease;
             border: 1px solid #e2e8f0;
@@ -30,6 +33,7 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
+        /* Animação Flutuante para as Garrafas */
         .floating-anim {
             animation: floating 3s ease-in-out infinite;
         }
@@ -39,7 +43,6 @@
             100% { transform: translateY(0px); }
         }
 
-        /* Replica do Estilo Elementor */
         .details-summary::-webkit-details-marker { display: none; }
         
         @media (max-width: 768px) {
@@ -49,65 +52,66 @@
 </head>
 <body class="bg-white text-slate-800">
 
-    <!-- Header -->
+    <!-- Navegação -->
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 py-4 px-6 shadow-sm">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <img src="images/burn_slim_official_website_167x51.webp" alt="BurnSlim Logo" class="h-10" onerror="this.src='https://via.placeholder.com/167x51?text=BURNSLIM'">
+            <img src="images/burn_slim_official_website_167x51.webp" alt="BurnSlim Logo" class="h-10">
             <a href="#buy" class="bg-[#3E7FB1] text-white px-6 py-2 rounded-full font-bold text-sm flex items-center gap-2 hover:bg-[#2d628a] transition shadow-md">
-                <i data-lucide="shopping-cart" class="w-4 h-4"></i> BUY NOW
+                <i data-lucide="shopping-cart" class="w-4 h-4"></i> COMPRAR AGORA
             </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Seção Hero -->
     <section class="hero-gradient text-white py-16 px-6 overflow-hidden">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 order-2 md:order-1 text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-6">
-                    Discover How Burn Slim Can Support <span class="text-[#FFFF00]">Natural Fat Burning & Metabolic Balance</span>
+                    Descubra como o Burn Slim pode apoiar a <span class="text-[#FFFF00]">Queima de Gordura Natural e o Equilíbrio Metabólico</span>
                 </h1>
                 <p class="text-lg opacity-90 mb-8 leading-relaxed">
-                    Burn Slim is meticulously formulated with a proprietary blend of 6-potent herbs and plants backed by clinical research to help boost metabolism, suppress appetite, burn fat, and promote overall wellness.
+                    Burn Slim é meticulosamente formulado com uma mistura proprietária de 6 ervas e plantas potentes apoiadas por pesquisas clínicas.
                 </p>
+                <!-- Selos de Qualidade -->
                 <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-10">
-                    <img src="images/iconvsl5-1-2-1.webp" class="w-16 h-16" alt="GMP" onerror="this.style.display='none'">
-                    <img src="images/iconvsl6-1-2-1.webp" class="w-16 h-16" alt="Natural" onerror="this.style.display='none'">
-                    <img src="images/iconvsl8-1-2-1.webp" class="w-16 h-16" alt="USA" onerror="this.style.display='none'">
-                    <img src="images/iconvsl9-1-2-1.webp" class="w-16 h-16" alt="FDA" onerror="this.style.display='none'">
+                    <img src="images/iconvsl5-1-2-1.webp" class="w-16 h-16" alt="GMP">
+                    <img src="images/iconvsl6-1-2-1.webp" class="w-16 h-16" alt="Natural">
+                    <img src="images/iconvsl8-1-2-1.webp" class="w-16 h-16" alt="Made in USA">
+                    <img src="images/iconvsl9-1-2-1.webp" class="w-16 h-16" alt="FDA Registered">
                 </div>
-                <a href="#buy" class="inline-block bg-[#FFFF00] text-slate-900 px-10 py-4 rounded-xl font-black text-xl hover:scale-105 transition shadow-2xl">GET STARTED NOW</a>
+                <a href="#buy" class="inline-block bg-[#FFFF00] text-slate-900 px-10 py-4 rounded-xl font-black text-xl hover:scale-105 transition shadow-2xl uppercase">Quero Começar Agora</a>
             </div>
             <div class="flex-1 order-1 md:order-2 flex justify-center">
-                <img src="images/img-3-bottles.webp" alt="Bottles" class="w-full max-w-md floating-anim drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]" onerror="this.src='https://via.placeholder.com/400x400?text=BURN+SLIM+BOTTLES'">
+                <img src="images/img-3-bottles.webp" alt="Potes BurnSlim" class="w-full max-w-md floating-anim drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)]">
             </div>
         </div>
     </section>
 
-    <!-- Authority Section -->
-    <section class="py-20 px-6 bg-white">
+    <!-- Seção de Autoridade (Especialista) -->
+    <section class="py-20 px-6 bg-white border-b border-slate-50">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="flex-1 order-2 md:order-1 text-center md:text-left">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8">
-                    Discover the secret behind <span class="text-[#3E7FB1]">BurnSlim</span> in 2026
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 uppercase italic">
+                    O segredo por trás do <span class="text-[#3E7FB1]">BurnSlim</span> em 2026
                 </h2>
                 <div class="w-20 h-1 bg-[#3E7FB1] mb-8 mx-auto md:mx-0"></div>
                 <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
-                    <p>Burn Slim is a meticulously developed natural formula that combines a selection of key plant-based ingredients to support metabolism, fat-burning processes, and healthy weight management.</p>
-                    <p>Our formula contains carefully selected ingredients in balanced amounts, thoughtfully blended to work together and support consistent, sustainable results.</p>
+                    <p>Burn Slim é uma fórmula natural meticulosamente desenvolvida que combina uma seleção de ingredientes botânicos chave para apoiar o metabolismo e processos saudáveis de gerenciamento de peso.</p>
+                    <p class="font-bold text-slate-800">Nossa fórmula contém ingredientes cuidadosamente selecionados em quantidades equilibradas para resultados consistentes.</p>
                 </div>
             </div>
             <div class="flex-1 order-1 md:order-2">
-                <img src="images/Doctor-1-683x1024.png" alt="Specialist" class="w-full max-w-sm mx-auto rounded-[2rem] shadow-2xl" onerror="this.src='https://via.placeholder.com/400x600?text=Specialist'">
+                <img src="images/Doctor-1-683x1024.png" alt="Doutor Especialista" class="w-full max-w-sm mx-auto rounded-[2rem] shadow-2xl">
             </div>
         </div>
     </section>
 
-    <!-- Badges Section -->
+    <!-- Ícones de Qualidade -->
     <section class="py-12 bg-slate-50 border-y border-slate-100">
         <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6 text-center">
             <div class="flex flex-col items-center">
                 <img src="images/mon_3-2-1-1.png" class="w-24 h-24 mb-4" alt="USA">
-                <p class="text-sm font-bold text-slate-700">Made in the USA</p>
+                <p class="text-sm font-bold text-slate-700">Produzido nos EUA</p>
             </div>
             <div class="flex flex-col items-center">
                 <img src="images/mon_4-2-1-1.png" class="w-24 h-24 mb-4" alt="Natural">
@@ -115,92 +119,92 @@
             </div>
             <div class="flex flex-col items-center">
                 <img src="images/mon_2-2-1-1.png" class="w-24 h-24 mb-4" alt="FDA">
-                <p class="text-sm font-bold text-slate-700">FDA-Registered</p>
+                <p class="text-sm font-bold text-slate-700">Instalações FDA</p>
             </div>
             <div class="flex flex-col items-center">
                 <img src="images/mon_1-2-1-1.png" class="w-24 h-24 mb-4" alt="GMP">
-                <p class="text-sm font-bold text-slate-700">GMP-Certified</p>
+                <p class="text-sm font-bold text-slate-700">Certificado GMP</p>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Seção de Ofertas com Cronômetro -->
     <section id="buy" class="py-20 px-6 bg-[#0D2E4D] text-white">
         <div class="max-w-6xl mx-auto text-center mb-16">
-            <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase">
-                Claim Your Discounted BurnSlim <span class="text-[#6BC9F4]">Now While Supplies Last!</span>
+            <h2 class="text-3xl md:text-5xl font-black mb-6 uppercase italic">
+                Garanta seu BurnSlim com Desconto <span class="text-[#6BC9F4]">Enquanto durarem os estoques!</span>
             </h2>
             <div id="countdown-timer-1" class="text-5xl md:text-6xl font-black font-poppins text-white mb-4">30:00</div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
             
-            <!-- Basic Offer (2 Bottles) -->
+            <!-- Oferta Básica -->
             <div class="price-card bg-white text-slate-800 rounded-3xl overflow-hidden flex flex-col">
-                <div class="bg-slate-100 py-4 text-center font-bold uppercase tracking-widest text-[#3E7FB1]">Basic</div>
+                <div class="bg-slate-100 py-4 text-center font-bold uppercase tracking-widest text-[#3E7FB1]">Básico</div>
                 <div class="p-8 flex-1 flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-black mb-4">2 BOTTLES<br><span class="text-sm font-normal text-slate-500">60 Day Supply</span></h3>
-                    <img src="images/img-2-bottles.webp" class="w-48 mb-6" alt="2 Bottles">
+                    <h3 class="text-2xl font-black mb-4 uppercase italic">2 POTES<br><span class="text-sm font-normal text-slate-500">60 Dias de Suprimento</span></h3>
+                    <img src="images/img-2-bottles.webp" class="w-48 mb-6" alt="2 Potes">
                     <div class="flex items-start justify-center gap-1 mb-6">
                         <span class="text-2xl font-bold mt-2">$</span>
-                        <span class="text-7xl font-black leading-none">79</span>
-                        <span class="text-sm font-bold text-slate-400 self-end text-left">Per<br>Bottle</span>
+                        <span class="text-7xl font-black leading-none text-[#0D2E4D]">79</span>
+                        <span class="text-sm font-bold text-slate-400 self-end text-left uppercase leading-tight">Por<br>Pote</span>
                     </div>
-                    <ul class="space-y-3 mb-8 text-left w-full">
-                        <li class="flex items-center gap-2 font-bold text-[#3E7FB1]"><i data-lucide="check-circle" class="w-5 h-5"></i> YOU SAVE $200!</li>
-                        <li class="flex items-center gap-2 text-slate-500"><i data-lucide="check-circle" class="w-5 h-5"></i> 60 DAYS GUARANTEE</li>
+                    <ul class="space-y-3 mb-8 text-left w-full border-t pt-6">
+                        <li class="flex items-center gap-2 font-bold text-[#3E7FB1] uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> ECONOMIZE $200!</li>
+                        <li class="flex items-center gap-2 text-slate-500 uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> 60 DIAS DE GARANTIA</li>
                     </ul>
                     <div class="mt-auto w-full">
-                        <p class="text-lg mb-4">TOTAL: <span class="line-through text-slate-300">$358</span> <span class="font-black">$158</span></p>
-                        <a href="https://burnslim.mycartpanda.com/checkout/205375748:1?afid=2OR1evGo79" class="block w-full bg-[#3E7FB1] text-white py-4 rounded-xl font-black text-lg hover:brightness-110 transition uppercase">Add to Cart</a>
-                        <p class="text-xs text-slate-400 mt-4">+ $9.99 SHIPPING</p>
+                        <p class="text-lg mb-4 uppercase">TOTAL: <span class="line-through text-slate-300 font-bold">$358</span> <span class="font-black">$158</span></p>
+                        <a href="https://burnslim.mycartpanda.com/checkout/205375748:1?afid=2OR1evGo79" class="block w-full bg-[#3E7FB1] text-white py-4 rounded-xl font-black text-lg hover:brightness-110 transition uppercase italic">Adicionar ao Carrinho</a>
+                        <p class="text-[10px] text-slate-400 mt-4 uppercase">+ $9.99 FRETE</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Best Value (6 Bottles) -->
-            <div class="price-card bg-white text-slate-800 rounded-3xl overflow-hidden flex flex-col border-4 border-[#FFFF00] transform md:scale-110 z-10 shadow-2xl">
-                <div class="bg-[#FFFF00] py-4 text-center font-black uppercase tracking-widest text-slate-900">Best Value!</div>
+            <!-- Melhor Valor (6 Potes) -->
+            <div class="price-card bg-white text-slate-800 rounded-3xl overflow-hidden flex flex-col border-4 border-[#FFFF00] transform md:scale-110 z-10 shadow-2xl relative">
+                <div class="bg-[#FFFF00] py-4 text-center font-black uppercase tracking-widest text-slate-900">Melhor Custo-Benefício!</div>
                 <div class="p-8 flex-1 flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-black mb-4">6 BOTTLES<br><span class="text-sm font-normal text-slate-500">180 Day Supply</span></h3>
-                    <img src="images/img-6-bottles.webp" class="w-56 mb-6" alt="6 Bottles">
+                    <h3 class="text-2xl font-black mb-4 uppercase italic leading-tight text-[#0D2E4D]">6 POTES<br><span class="text-sm font-normal text-slate-500">180 Dias de Suprimento</span></h3>
+                    <img src="images/img-6-bottles.webp" class="w-56 mb-6" alt="6 Potes">
                     <div class="flex items-start justify-center gap-1 mb-6">
                         <span class="text-2xl font-bold mt-2">$</span>
-                        <span class="text-7xl font-black leading-none">49</span>
-                        <span class="text-sm font-bold text-slate-400 self-end text-left">Per<br>Bottle</span>
+                        <span class="text-8xl font-black leading-none text-[#0D2E4D]">49</span>
+                        <span class="text-sm font-bold text-slate-400 self-end text-left uppercase leading-tight">Por<br>Pote</span>
                     </div>
-                    <ul class="space-y-3 mb-8 text-left w-full">
-                        <li class="flex items-center gap-2 font-black text-orange-500"><i data-lucide="check-circle" class="w-5 h-5"></i> YOU SAVE $780!</li>
-                        <li class="flex items-center gap-2 font-bold text-[#3E7FB1]"><i data-lucide="check-circle" class="w-5 h-5"></i> BIGGEST DISCOUNT</li>
-                        <li class="flex items-center gap-2 text-slate-500"><i data-lucide="check-circle" class="w-5 h-5"></i> 60 DAYS GUARANTEE</li>
+                    <ul class="space-y-3 mb-8 text-left w-full border-t pt-6">
+                        <li class="flex items-center gap-2 font-black text-orange-500 uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> ECONOMIZE $780!</li>
+                        <li class="flex items-center gap-2 font-bold text-[#3E7FB1] uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> MAIOR DESCONTO</li>
+                        <li class="flex items-center gap-2 text-slate-500 uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> 60 DIAS DE GARANTIA</li>
                     </ul>
                     <div class="mt-auto w-full">
-                        <p class="text-lg mb-4">TOTAL: <span class="line-through text-slate-300">$1074</span> <span class="font-black text-2xl">$294</span></p>
-                        <a href="https://burnslim.mycartpanda.com/checkout/205375750:1?afid=2OR1evGo79" class="block w-full bg-[#0D2E4D] text-white py-5 rounded-xl font-black text-xl hover:brightness-125 transition uppercase animate-pulse">Add to Cart</a>
-                        <p class="text-xs font-bold text-emerald-600 mt-4 uppercase">+ FREE SHIPPING</p>
+                        <p class="text-xl mb-4 uppercase">TOTAL: <span class="line-through text-slate-300 font-bold">$1074</span> <span class="font-black text-2xl text-orange-600">$294</span></p>
+                        <a href="https://burnslim.mycartpanda.com/checkout/205375750:1?afid=2OR1evGo79" class="block w-full bg-[#0D2E4D] text-white py-5 rounded-xl font-black text-xl hover:scale-105 transition uppercase italic animate-pulse">Adicionar ao Carrinho</a>
+                        <p class="text-xs font-bold text-emerald-600 mt-4 uppercase italic">+ FRETE GRÁTIS HOJE</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Most Popular (3 Bottles) -->
+            <!-- Mais Popular -->
             <div class="price-card bg-white text-slate-800 rounded-3xl overflow-hidden flex flex-col">
-                <div class="bg-slate-800 py-4 text-center font-bold uppercase tracking-widest text-white">Most Popular</div>
+                <div class="bg-slate-800 py-4 text-center font-bold uppercase tracking-widest text-white">Mais Popular</div>
                 <div class="p-8 flex-1 flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-black mb-4">3 BOTTLES<br><span class="text-sm font-normal text-slate-500">90 Day Supply</span></h3>
-                    <img src="images/img-3-bottles-1.webp" class="w-48 mb-6" alt="3 Bottles">
+                    <h3 class="text-2xl font-black mb-4 uppercase italic">3 POTES<br><span class="text-sm font-normal text-slate-500">90 Dias de Suprimento</span></h3>
+                    <img src="images/img-3-bottles-1.webp" class="w-48 mb-6" alt="3 Potes">
                     <div class="flex items-start justify-center gap-1 mb-6">
                         <span class="text-2xl font-bold mt-2">$</span>
-                        <span class="text-7xl font-black leading-none">69</span>
-                        <span class="text-sm font-bold text-slate-400 self-end text-left">Per<br>Bottle</span>
+                        <span class="text-7xl font-black leading-none text-[#0D2E4D]">69</span>
+                        <span class="text-sm font-bold text-slate-400 self-end text-left uppercase leading-tight">Por<br>Pote</span>
                     </div>
-                    <ul class="space-y-3 mb-8 text-left w-full">
-                        <li class="flex items-center gap-2 font-bold text-[#3E7FB1]"><i data-lucide="check-circle" class="w-5 h-5"></i> YOU SAVE $330!</li>
-                        <li class="flex items-center gap-2 text-slate-500"><i data-lucide="check-circle" class="w-5 h-5"></i> 60 DAYS GUARANTEE</li>
+                    <ul class="space-y-3 mb-8 text-left w-full border-t pt-6">
+                        <li class="flex items-center gap-2 font-bold text-[#3E7FB1] uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> ECONOMIZE $330!</li>
+                        <li class="flex items-center gap-2 text-slate-500 uppercase text-xs"><i data-lucide="check-circle" class="w-4 h-4"></i> 60 DIAS DE GARANTIA</li>
                     </ul>
                     <div class="mt-auto w-full">
-                        <p class="text-lg mb-4">TOTAL: <span class="line-through text-slate-300">$537</span> <span class="font-black">$207</span></p>
-                        <a href="https://burnslim.mycartpanda.com/checkout/205375749:1?afid=2OR1evGo79" class="block w-full bg-[#3E7FB1] text-white py-4 rounded-xl font-black text-lg hover:brightness-110 transition uppercase">Add to Cart</a>
-                        <p class="text-xs font-bold text-emerald-600 mt-4 uppercase">+ FREE SHIPPING</p>
+                        <p class="text-lg mb-4 uppercase">TOTAL: <span class="line-through text-slate-300 font-bold">$537</span> <span class="font-black">$207</span></p>
+                        <a href="https://burnslim.mycartpanda.com/checkout/205375749:1?afid=2OR1evGo79" class="block w-full bg-[#3E7FB1] text-white py-4 rounded-xl font-black text-lg hover:brightness-110 transition uppercase italic">Adicionar ao Carrinho</a>
+                        <p class="text-xs font-bold text-emerald-600 mt-4 uppercase italic">+ FRETE GRÁTIS</p>
                     </div>
                 </div>
             </div>
@@ -208,98 +212,76 @@
         </div>
     </section>
 
-    <!-- Guarantee Replica -->
-    <section class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto bg-white p-12 md:p-20 rounded-[3rem] border border-slate-100 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.1)] text-center relative overflow-visible">
-            <img src="images/guarantee-badge.webp" class="w-40 h-40 absolute -top-20 left-1/2 -translate-x-1/2 drop-shadow-xl" alt="Guarantee">
-            <h4 class="text-[#3E7FB1] font-bold text-xl mb-4 mt-8 uppercase tracking-tight">100% Follow-up and Full Support</h4>
-            <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-10 underline decoration-[#3E7FB1]/30 underline-offset-8">60-Day Satisfaction Guarantee – We Stand Behind Our Product</h2>
+    <!-- Garantia de 60 Dias -->
+    <section class="py-24 px-6 bg-white overflow-hidden">
+        <div class="max-w-4xl mx-auto bg-white p-12 md:p-20 rounded-[3rem] border-2 border-slate-50 shadow-[0_45px_70px_-15px_rgba(0,0,0,0.08)] text-center relative">
+            <img src="images/guarantee-badge.webp" class="w-40 h-40 absolute -top-20 left-1/2 -translate-x-1/2 drop-shadow-2xl" alt="Selo de Garantia">
+            <h4 class="text-[#3E7FB1] font-bold text-xl mb-4 mt-8 uppercase tracking-widest">Suporte Total e Acompanhamento</h4>
+            <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-10 underline decoration-[#3E7FB1]/20 underline-offset-8 uppercase italic">Garantia de Satisfação de 60 Dias</h2>
             <p class="text-slate-500 text-lg leading-relaxed italic font-medium">
-                We're so confident you'll achieve incredible results that we back BurnSlim with a 100% satisfaction guarantee for 60 days. Start using it as soon as it arrives, and within days, you may notice increased energy, reduced cravings, and a lighter feeling throughout your body. If after several weeks or even months you're not completely satisfied, we'll refund your money in full.
+                Estamos tão confiantes de que você alcançará resultados incríveis que garantimos o BurnSlim com uma garantia de 100% de satisfação por 60 dias. Se após algumas semanas ou mesmo meses você não estiver completamente satisfeito, reembolsaremos seu dinheiro integralmente. Com o BurnSlim, você está verdadeiramente no controle de sua jornada.
             </p>
-            <div class="mt-12 flex flex-wrap justify-center gap-8 opacity-40 grayscale">
-                <img src="images/usa-1-2-1-1-1-1-1.png" class="h-12">
-                <img src="images/gmo-1-2-1-1-1-1-1.png" class="h-12">
-                <img src="images/nat-1-1.png" class="h-12">
-                <img src="images/fda-1-2-1-1-1-1-1.png" class="h-12">
-                <img src="images/gmp-1-2-1-1-1-1-1.png" class="h-12">
+            <div class="mt-12 flex flex-wrap justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <img src="images/usa-1-2-1-1-1-1-1.png" class="h-10" alt="USA">
+                <img src="images/gmo-1-2-1-1-1-1-1.png" class="h-10" alt="Non-GMO">
+                <img src="images/nat-1-1.png" class="h-10" alt="Natural">
+                <img src="images/fda-1-2-1-1-1-1-1.png" class="h-10" alt="FDA">
+                <img src="images/gmp-1-2-1-1-1-1-1.png" class="h-10" alt="GMP">
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Depoimentos Reais -->
     <section class="py-20 bg-slate-50 px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black text-center mb-16">Here’s What Others Are Saying About <span class="text-[#3E7FB1]">BurnSlim</span></h2>
+            <h2 class="text-3xl md:text-5xl font-black text-center mb-20 uppercase italic tracking-tighter">Resultados de Quem <span class="text-[#3E7FB1]">Já Usa BurnSlim</span></h2>
             
-            <div class="space-y-12">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm flex flex-col md:flex-row items-center gap-10">
-                    <img src="images/BzjWpc2651678.webp" class="w-64 h-64 object-cover rounded-2xl" alt="Carla">
-                    <div class="flex-1">
-                        <p class="text-xl font-bold mb-4">“It was after finishing the third bottle that I truly saw the difference.”</p>
-                        <p class="text-slate-500 italic mb-6 text-lg">“I had tried many things before with no lasting results. When I found BurnSlim, I decided to do it properly and ordered the 3-bottle bundle. At first, I noticed better appetite control, but after the second bottle my clothes started fitting looser. By the time I finished the third bottle, the change was undeniable.”*</p>
-                        <p class="font-black text-[#3E7FB1]">— Carla M., 37 – Orlando, FL</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm flex flex-col gap-6 border border-slate-100">
+                    <img src="images/BzjWpc2651678.webp" class="w-full h-64 object-cover rounded-2xl shadow-md" alt="Carla depoimento">
+                    <div>
+                        <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i></div>
+                        <p class="text-xl font-black mb-4 italic">"Depois do terceiro pote vi a diferença real."</p>
+                        <p class="text-slate-500 italic mb-6 leading-relaxed">"Tinha tentado muitas coisas sem resultados duradouros. Com o BurnSlim, notei melhor controle do apetite e minhas roupas começaram a ficar mais largas. É uma mudança inegável."*</p>
+                        <p class="font-black text-[#3E7FB1] uppercase text-sm">— Carla M., 37 anos – Orlando, FL</p>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-3xl shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
-                    <img src="images/67766bfcac47fe159d0716a6.webp" class="w-64 h-64 object-cover rounded-2xl" alt="Mark">
-                    <div class="flex-1">
-                        <p class="text-xl font-bold mb-4">“I wasn’t looking for a miracle. I wanted something that actually worked day to day.”</p>
-                        <p class="text-slate-500 italic mb-6 text-lg">“Over the weeks, I noticed fewer cravings, better control at meals, and my belly slowly started to shrink. It wasn’t extreme, it was steady — and that’s what made it work. I feel lighter, more confident, and motivated to keep going.”*</p>
-                        <p class="font-black text-[#3E7FB1]">— Mark D., 38 – Phoenix, AZ</p>
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm flex flex-col gap-6 border border-slate-100">
+                    <img src="images/67766bfcac47fe159d0716a6.webp" class="w-full h-64 object-cover rounded-2xl shadow-md" alt="Mark depoimento">
+                    <div>
+                        <div class="flex text-yellow-400 mb-4"><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i><i data-lucide="star" class="fill-current w-5"></i></div>
+                        <p class="text-xl font-black mb-4 italic">"Sinto-me mais leve e confiante."</p>
+                        <p class="text-slate-500 italic mb-6 leading-relaxed">"Ao longo das semanas, notei menos desejos por doces e meu abdômen começou a reduzir. Os resultados vieram de forma natural e sem estresse. Me sinto motivado a continuar."*</p>
+                        <p class="font-black text-[#3E7FB1] uppercase text-sm">— Mark D., 38 anos – Phoenix, AZ</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ingredients List -->
-    <section class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-            <!-- Ing 1 -->
-            <div class="text-center space-y-4">
-                <img src="images/1-rhr7qg2iow42xd2kxefg4ooj956sirkqnk8o8s08ai.webp" class="w-full rounded-2xl shadow-lg" alt="Cinnamon">
-                <h3 class="font-black text-xl text-[#3E7FB1]">Cinnamon Bark Extract</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">A natural plant extract that helps activate your body’s fat-burning process by supporting thermogenesis.</p>
-            </div>
-            <!-- Ing 2 -->
-            <div class="text-center space-y-4">
-                <img src="images/2-1-rhr7vgjj52z4uhsfnkftff51b4h9knh7cdhwdwkn3u.webp" class="w-full rounded-2xl shadow-lg" alt="Bilberry">
-                <h3 class="font-black text-xl text-[#3E7FB1]">Bilberry Leaf Extract</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">A plant-based extract that supports metabolic balance and helps regulate energy management.</p>
-            </div>
-            <!-- Ing 3 -->
-            <div class="text-center space-y-4">
-                <img src="images/3-1-rhr7w7suna0g76ou8e7zxq9ejaqwrvhf44ezaxg83e.webp" class="w-full rounded-2xl shadow-lg" alt="Green Tea">
-                <h3 class="font-black text-xl text-[#3E7FB1]">Green Tea Extract</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Rich in active compounds that support metabolic activity and help the body use energy more efficiently.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-20 px-6 text-center text-xs">
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 text-slate-400 py-20 px-6 text-center text-[10px] md:text-xs">
         <div class="max-w-4xl mx-auto space-y-10">
-            <img src="images/refs-1024x194.webp" class="h-12 mx-auto brightness-0 invert opacity-50" alt="References">
-            <p class="italic">The company is not endorsed by, sponsored by, or affiliated with any of these organizations.</p>
+            <img src="images/refs-1024x194.webp" class="h-10 mx-auto brightness-0 invert opacity-40" alt="Scientific References">
+            <p class="italic px-6">A empresa não é endossada, patrocinada ou afiliada a nenhuma dessas organizações. Os resultados individuais podem variar.</p>
             <div class="w-full h-px bg-slate-800"></div>
-            <p>© BurnSlim Research 2026. All Rights Reserved.</p>
-            <div class="flex justify-center gap-6 font-bold uppercase tracking-widest">
-                <a href="#" class="hover:text-white transition">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition">Terms of Service</a>
-                <a href="#" class="hover:text-white transition">Contact</a>
+            <p class="uppercase font-bold tracking-[0.3em]">© BurnSlim Research 2026. Todos os Direitos Reservados.</p>
+            <div class="flex justify-center gap-6 font-bold uppercase tracking-widest text-[9px]">
+                <a href="#" class="hover:text-white transition">Privacidade</a>
+                <a href="#" class="hover:text-white transition">Termos</a>
+                <a href="#" class="hover:text-white transition">Contato</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Lucide Icons
+        // Inicializa os ícones Lucide
         lucide.createIcons();
 
-        // Timer Functionality
+        // Lógica do Cronômetro de 30 minutos
         (function(){
             let time = 30 * 60; 
             const timerEl = document.getElementById("countdown-timer-1");
@@ -311,7 +293,7 @@
                 if (time > 0) {
                     time--;
                 } else {
-                    timerEl.textContent = "OFFER EXPIRED";
+                    timerEl.textContent = "OFERTA EXPIRADA";
                 }
             };
 
@@ -319,13 +301,14 @@
             setInterval(updateTimer, 1000);
         })();
 
-        // Smooth Scroll for Anchors
+        // Rolagem suave para âncoras
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
             });
         });
     </script>

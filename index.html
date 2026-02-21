@@ -1,342 +1,249 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="pt-BR">
 <head>
-    <!-- SEO CORE - ULTRA-OPTIMISÉ GOOGLE ADS 2026 -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <title>Erexol™ France – Confort Prostatique & Vigueur Masculine | Site Officiel</title>
-    
-    <meta name="description" content="Découvrez Erexol™ : la solution bio-active n°1 pour le confort de la prostate et la vitalité masculine. Livraison discrète et paiement à la réception en France.">
-    <meta name="keywords" content="Erexol, confort prostate, vitalité homme, bien-être masculin, complément naturel, Erexol prix">
-    <link rel="canonical" href="https://erexol.hot24offers.shop/">
-    
-    <meta name="robots" content="index, follow">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="product">
-    <meta property="og:title" content="Erexol™ – Excellence et Vitalité Masculine">
-    <meta property="og:image" content="https://erexol.hot24offers.shop/images/erexol1.png">
-    <meta property="og:url" content="https://erexol.hot24offers.shop/">
-
-    <!-- PERFORMANCE & FAVICON -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="images/erexol1.png">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burn Slim | Transformação Natural e Real</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- JSON-LD STRUCTURED DATA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Erexol™ France",
-      "image": "https://erexol.hot24offers.shop/images/erexol1.png",
-      "description": "Soutien naturel pour le confort prostatique.",
-      "brand": { "@type": "Brand", "name": "Erexol" },
-      "offers": {
-        "@type": "Offer",
-        "price": "39",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
-        .bg-footer { background-color: #2A2A2A; }
-        .logo-filter { filter: brightness(0) saturate(100%) invert(14%) sepia(0%) saturate(0%) hue-rotate(320deg) brightness(97%) contrast(92%); }
-        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
-        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .btn-pulse { animation: pulse 2s infinite; }
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(250, 204, 21, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .price-card-popular { border: 4px solid #f59e0b; transform: scale(1.05); z-index: 10; }
+        @keyframes pulse-subtle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
         }
-        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .faq-item.active .faq-content { max-height: 400px; padding-bottom: 1rem; }
-        .faq-item.active .faq-icon { transform: rotate(180deg); }
-        #review-track { display: flex; transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1); }
-        .review-slide { min-width: 100%; padding: 0.75rem; display: flex; justify-content: center; }
-        @media (min-width: 1024px) { .review-slide { min-width: 33.333%; } }
-        .testimonial-card {
-            background: #ffffff; border-radius: 1.5rem; padding: 1.75rem;
-            box-shadow: 0 15px 35px -10px rgba(59, 130, 246, 0.1);
-            border-top: 4px solid #3b82f6; display: flex; flex-direction: column;
-            justify-content: space-between; height: 100%; min-height: 340px;
-        }
-        .premium-offer-card {
-            background: linear-gradient(135deg, #24344d 0%, #131d2e 100%);
-            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 2rem;
-        }
+        .btn-pulse { animation: pulse-subtle 2s infinite; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-white text-slate-900 overflow-x-hidden">
 
     <!-- Header -->
-    <header class="bg-white border-b border-slate-100 sticky top-0 z-50 transition-all py-3 shadow-sm" id="header">
-        <div class="container mx-auto px-6 flex justify-center lg:justify-start">
-            <img src="images/imgi_1_info-logo.png" alt="Erexol France Officiel" class="h-8 lg:h-10 w-auto logo-filter">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm py-3 px-6 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <img src="logoo.png" alt="Burn Slim Logo" class="h-10 md:h-12 object-contain">
+            <a href="#precos" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-5 rounded-full transition-all text-sm uppercase tracking-wider shadow-lg shadow-orange-200">
+                Comprar Agora
+            </a>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="gradient-bg text-white py-12 lg:py-20 overflow-hidden relative">
-        <div class="container mx-auto px-6 flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-10 lg:gap-16 relative z-10">
-            
-            <div class="order-1 lg:col-span-1 reveal">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight text-center lg:text-left tracking-tighter uppercase">
-                    Excellence & <span class="text-blue-400 italic">Confort Masculin</span>
+    <section class="relative pt-10 pb-20 px-6 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left z-10">
+                <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 font-bold px-4 py-1.5 rounded-full text-xs mb-6 uppercase tracking-widest">
+                    <i data-lucide="check-circle-2" class="w-4 h-4"></i> Recomendado por Especialistas
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight text-slate-900">
+                    Ative a Sua <span class="text-emerald-600 italic">Melhor Versão</span> com Burn Slim
                 </h1>
-                <p class="text-lg text-blue-100/90 mb-8 text-center lg:text-left font-medium max-w-lg">La formule bio-active de référence pour une sérénité jour et nuit.</p>
-            </div>
-
-            <div class="order-2 lg:row-span-3 flex justify-center relative reveal" style="transition-delay: 0.1s">
-                <div class="relative z-10 w-[55%] lg:w-[80%] max-w-[280px] lg:max-w-[400px] transform hover:scale-105 transition-all duration-1000">
-                    <img src="images/erexol1.png" alt="Erexol Premium Edition" class="w-full h-auto drop-shadow-[0_25px_40px_rgba(0,0,0,0.6)]">
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    A ciência por trás do emagrecimento saudável. Uma fórmula botânica concentrada desenvolvida para acelerar o metabolismo e devolver sua energia diária.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#precos" class="btn-pulse bg-emerald-600 hover:bg-emerald-700 text-white text-xl font-extrabold py-5 px-12 rounded-2xl shadow-xl transition-all flex items-center justify-center gap-3">
+                        <i data-lucide="shopping-cart"></i> COMEÇAR MINHA TRANSFORMAÇÃO
+                    </a>
                 </div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 lg:w-[450px] lg:h-[450px] bg-blue-500 rounded-full blur-[90px] opacity-15"></div>
-            </div>
-
-            <div class="order-3 reveal" style="transition-delay: 0.2s">
-                <div class="space-y-4 mb-10">
-                    <div class="flex items-center space-x-3 justify-center lg:justify-start">
-                        <div class="shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 border border-blue-500/20">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <p class="text-base font-bold text-blue-50">Équilibre prostatique optimal</p>
-                    </div>
-                    <div class="flex items-center space-x-3 justify-center lg:justify-start">
-                        <div class="shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 border border-blue-500/20">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <p class="text-base font-bold text-blue-50">Sommeil continu sans interruption</p>
-                    </div>
-                    <div class="flex items-center space-x-3 justify-center lg:justify-start">
-                        <div class="shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 border border-blue-500/20">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        <p class="text-base font-bold text-blue-50">Vigueur et énergie retrouvées</p>
-                    </div>
+                <div class="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-slate-400 font-bold uppercase tracking-widest">
+                    <span class="flex items-center gap-2 italic">Resultados Comprovados</span>
+                    <span class="hidden md:inline">|</span>
+                    <span class="flex items-center gap-2">Sem Glúten</span>
+                    <span class="hidden md:inline">|</span>
+                    <span class="flex items-center gap-2">Sem Soja</span>
                 </div>
             </div>
-
-            <div class="order-4 w-full reveal" style="transition-delay: 0.3s">
-                <div class="premium-offer-card p-6 lg:p-8 relative overflow-hidden group">
-                    <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
-                        <div class="text-center lg:text-left">
-                            <div class="flex flex-col items-center lg:items-start leading-none">
-                                <span class="text-[10px] text-gray-400 uppercase font-bold mb-1 italic">Offre de lancement : <span class="line-through">78€</span></span>
-                                <span class="text-6xl font-black tracking-tighter text-yellow-400">39€</span>
-                            </div>
-                        </div>
-                        <div class="w-full lg:w-auto text-center">
-                            <a href="#order-form-container" class="block w-full lg:px-16 bg-yellow-400 text-blue-900 px-6 py-4 rounded-2xl font-black text-xl lg:text-2xl hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl uppercase tracking-tighter btn-pulse">
-                                Commander
-                            </a>
-                        </div>
+            <div class="flex-1 relative flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-10 bg-emerald-200 rounded-full blur-[100px] opacity-30"></div>
+                    <img src="imgi_48_Doctor-1.png.jpg" alt="Doutor Recomendando Burn Slim" class="relative z-10 w-full max-w-md rounded-[3rem] shadow-2xl border-8 border-white group-hover:rotate-1 transition-transform duration-500">
+                    <div class="absolute -bottom-6 -left-6 z-20 bg-white p-5 rounded-3xl shadow-2xl border border-slate-100 animate-bounce">
+                        <img src="imgi_21_nat-1-1.png" alt="100% Natural" class="w-16 h-16">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ingredients -->
-    <section class="py-16 lg:py-24 bg-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-2xl lg:text-4xl font-black mb-12 uppercase tracking-tighter reveal">Le Pouvoir du Naturel</h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 lg:gap-8">
-                <div class="reveal">
-                    <img src="images/palmette.png" alt="Palmier Nain" class="w-16 h-16 lg:w-20 lg:h-20 rounded-full mx-auto mb-4 object-cover border-2 border-slate-100 shadow-sm">
-                    <h3 class="font-black text-[10px] lg:text-xs uppercase text-slate-900">Palmier Nain</h3>
-                </div>
-                <div class="reveal" style="transition-delay: 0.1s">
-                    <img src="images/fleurs.png" alt="Épilobe" class="w-16 h-16 lg:w-20 lg:h-20 rounded-full mx-auto mb-4 object-cover border-2 border-slate-100 shadow-sm">
-                    <h3 class="font-black text-[10px] lg:text-xs uppercase text-slate-900">Épilobe</h3>
-                </div>
-                <div class="reveal" style="transition-delay: 0.2s">
-                    <img src="images/péruvienne.png" alt="Maca" class="w-16 h-16 lg:w-20 lg:h-20 rounded-full mx-auto mb-4 object-cover border-2 border-slate-100 shadow-sm">
-                    <h3 class="font-black text-[10px] lg:text-xs uppercase text-slate-900">Maca</h3>
-                </div>
-                <div class="reveal" style="transition-delay: 0.3s">
-                    <img src="images/d'ortie.png" alt="Ortie" class="w-16 h-16 lg:w-20 lg:h-20 rounded-full mx-auto mb-4 object-cover border-2 border-slate-100 shadow-sm">
-                    <h3 class="font-black text-[10px] lg:text-xs uppercase text-slate-900">Ortie</h3>
-                </div>
-                <div class="reveal" style="transition-delay: 0.4s">
-                    <img src="images/ginseng.png" alt="Ginseng" class="w-16 h-16 lg:w-20 lg:h-20 rounded-full mx-auto mb-4 object-cover border-2 border-slate-100 shadow-sm">
-                    <h3 class="font-black text-[10px] lg:text-xs uppercase text-slate-900">Ginseng</h3>
-                </div>
+    <!-- Authority Badges -->
+    <section class="bg-slate-900 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center gap-3 group">
+                <img src="imgi_22_fda-1-2-1-1-1-1-1.png" alt="FDA Approved" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center">Laboratório FDA</p>
+            </div>
+            <div class="flex flex-col items-center gap-3 group">
+                <img src="imgi_23_gmp-1-2-1-1-1-1-1.png" alt="GMP Certified" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center">Padrão GMP</p>
+            </div>
+            <div class="flex flex-col items-center gap-3 group">
+                <img src="imgi_20_gmo-1-2-1-1-1-1-1.png" alt="GMO Free" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center">Livre de Transgênicos</p>
+            </div>
+            <div class="flex flex-col items-center gap-3 group">
+                <img src="imgi_21_nat-1-1.png" alt="100% Natural" class="h-16 md:h-20 grayscale hover:grayscale-0 transition-all">
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest text-center">Ativos Naturais</p>
             </div>
         </div>
     </section>
 
-    <!-- Review Section -->
-    <section class="py-16 lg:py-24 bg-blue-50 border-y border-blue-100 overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10 text-center">
-            <h2 class="text-3xl lg:text-4xl font-black mb-12 uppercase tracking-tighter reveal">Avis de nos Clients</h2>
-            
-            <div id="review-carousel-container" class="reveal">
-                <div id="review-track">
-                    <div class="review-slide">
-                        <div class="testimonial-card">
-                            <p class="text-base text-slate-700 italic leading-relaxed mb-6 text-left">"Erexol a transformé mes nuits. Je me réveille enfin reposé et sans gêne. Un indispensable."</p>
-                            <div class="flex items-center border-t border-slate-100 pt-4">
-                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-black text-white mr-3 text-xs">JL</div>
-                                <div class="text-left">
-                                    <span class="block font-black text-slate-900 uppercase text-[10px]">Jean-Luc, Paris</span>
-                                    <span class="text-[9px] text-green-600 font-bold uppercase tracking-widest italic">Achat Vérifié</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-slide">
-                        <div class="testimonial-card">
-                            <p class="text-base text-slate-700 italic leading-relaxed mb-6 text-left">"Ma vitalité est de retour. Je me sens physiquement beaucoup plus performant au quotidien."</p>
-                            <div class="flex items-center border-t border-slate-100 pt-4">
-                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-black text-white mr-3 text-xs">M</div>
-                                <div class="text-left">
-                                    <span class="block font-black text-slate-900 uppercase text-[10px]">Marc, Lyon</span>
-                                    <span class="text-[9px] text-green-600 font-bold uppercase tracking-widest italic">Achat Vérifié</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-slide">
-                        <div class="testimonial-card">
-                            <p class="text-base text-slate-700 italic leading-relaxed mb-6 text-left">"Livraison rapide sous 48h et colis totalement discret. Service impeccable et produit efficace."</p>
-                            <div class="flex items-center border-t border-slate-100 pt-4">
-                                <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-black text-white mr-3 text-xs">A</div>
-                                <div class="text-left">
-                                    <span class="block font-black text-slate-900 uppercase text-[10px]">André, Nantes</span>
-                                    <span class="text-[9px] text-green-600 font-bold uppercase tracking-widest italic">Achat Vérifié</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Pricing Section -->
+    <section id="precos" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase tracking-tighter italic">Selecione seu Pacote Exclusivo</h2>
+                <div class="bg-orange-500 text-white px-8 py-2 rounded-full inline-flex items-center gap-3 font-black text-sm uppercase tracking-widest shadow-lg animate-pulse">
+                    <i data-lucide="clock" class="w-5 h-5"></i> Oferta Expira em: <span id="timer">26:14</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Form Section -->
-    <section id="order" class="py-16 lg:py-24 bg-white relative overflow-hidden">
-        <div class="container mx-auto px-6 max-w-5xl relative z-10" id="order-form-container">
-            <div class="gradient-bg rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl grid lg:grid-cols-2 reveal">
-                <div class="bg-blue-600/30 p-8 lg:p-12 text-white flex flex-col justify-center text-center lg:text-left relative">
-                    <img src="images/erexol1.png" alt="Commander Erexol" class="w-24 lg:w-32 mx-auto mb-8 drop-shadow-2xl">
-                    <h2 class="text-3xl lg:text-4xl font-black mb-6 tracking-tighter uppercase text-yellow-400">Finalisez votre Cure</h2>
-                    
-                    <div class="space-y-3 mb-8 text-[11px] font-bold uppercase tracking-wide">
-                        <div class="flex items-center justify-center lg:justify-start gap-2">
-                            <span class="text-green-400">✓</span> Envoi Rapide & Discret
-                        </div>
-                        <div class="flex items-center justify-center lg:justify-start gap-2 text-yellow-400">
-                            <span>€</span> Paiement uniquement à la livraison
-                        </div>
+            <div class="grid md:grid-cols-3 gap-8 items-end">
+                <!-- Basic (2 Bottles) -->
+                <div class="bg-white border border-slate-200 rounded-[3rem] p-8 flex flex-col text-center hover:shadow-2xl transition-all group border-b-8 border-b-slate-300">
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-widest text-slate-400">Kit Básico</h3>
+                    <div class="relative mb-8 h-64 flex items-center justify-center">
+                        <img src="imgi_92_img-2-bottles-300x300.png" alt="Kit 2 Frascos" class="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform">
                     </div>
-
-                    <div class="p-5 bg-blue-500/20 rounded-2xl border border-blue-400/30">
-                        <div class="flex items-baseline justify-center lg:justify-start gap-3">
-                            <span class="text-4xl lg:text-5xl font-black text-white tracking-tighter">39€</span>
-                            <span class="text-lg text-gray-400 line-through">78€</span>
-                        </div>
+                    <div class="mb-6">
+                        <div class="text-6xl font-black text-slate-900 leading-none">$79</div>
+                        <p class="text-xs font-bold text-slate-400 uppercase mt-2">Por Frasco</p>
                     </div>
-                </div>
-                <div class="p-8 lg:p-16 bg-white">
-                    <form method="POST" action="order.php" class="space-y-4">
-                        <input type="text" name="name" placeholder="Nom et prénom" class="w-full px-6 py-4 rounded-xl border-2 border-slate-100 focus:border-blue-500 outline-none transition bg-slate-50 text-slate-900 font-bold" required>
-                        <input type="tel" name="phone" placeholder="Numéro de téléphone" class="w-full px-6 py-4 rounded-xl border-2 border-slate-100 focus:border-blue-500 outline-none transition bg-slate-50 text-slate-900 font-bold" onkeyup="this.value=this.value.replace(/\s/g,'')" minlength="5" required>
-
-                        <input type="hidden" name="sub1" value="">
-                        <input type="hidden" name="sub2" value="">
-                        <input type="hidden" name="sub3" value="">
-                        <input type="hidden" name="sub4" value="">
-                        <input type="hidden" name="sub5" value="">
-
-                        <button type="submit" class="w-full bg-blue-600 text-white font-black py-5 rounded-xl text-lg shadow-xl hover:bg-blue-700 transition uppercase tracking-tighter btn-pulse">
-                            Commander Maintenant
-                        </button>
-                    </form>
-                    <p class="text-center text-[10px] text-slate-400 mt-8 uppercase font-black italic">Confidentialité garantie</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="container mx-auto px-6 max-w-3xl">
-            <h2 class="text-2xl lg:text-4xl font-black mb-12 uppercase tracking-tighter text-center reveal">Questions Fréquentes</h2>
-            <div class="space-y-4 reveal">
-                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-                    <button class="w-full flex items-center justify-between p-6 text-left outline-none" onclick="toggleFaq(this)">
-                        <span class="font-black text-slate-900 text-base">Erexol est-il sûr pour un usage quotidien ?</span>
-                        <div class="faq-icon w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 transition shrink-0">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
+                    <button class="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-slate-800 transition-all shadow-lg mb-4">
+                        COMPRAR AGORA
                     </button>
-                    <div class="faq-content px-6">
-                        <p class="text-slate-600 text-sm">Oui. Erexol est formulé à partir d'extraits naturels purifiés, sans additifs chimiques agressifs, pour un soutien quotidien optimal.</p>
+                    <div class="flex items-center justify-center gap-2 text-xs font-bold text-slate-400 uppercase">
+                        <i data-lucide="truck" class="w-4 h-4"></i> + $9.99 Frete
                     </div>
                 </div>
-                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-                    <button class="w-full flex items-center justify-between p-6 text-left outline-none" onclick="toggleFaq(this)">
-                        <span class="font-black text-slate-900 text-base">Quelle est la durée de la cure ?</span>
-                        <div class="faq-icon w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 transition shrink-0">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </button>
-                    <div class="faq-content px-6">
-                        <p class="text-slate-600 text-sm">Pour des résultats durables, nous recommandons une cure de 30 jours minimum. Une cure de 90 jours est idéale pour une vitalité consolidée.</p>
+
+                <!-- Best Value (6 Bottles) -->
+                <div class="price-card-popular bg-white rounded-[3rem] p-10 flex flex-col text-center relative shadow-2xl border-orange-500 border-b-8 border-b-orange-600">
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-orange-500 text-white px-10 py-2.5 rounded-full font-black text-xs uppercase tracking-[0.2em] shadow-xl z-20">
+                        MAIOR ECONOMIA
                     </div>
+                    <h3 class="text-2xl font-black mb-6 uppercase tracking-widest text-emerald-600">Tratamento Completo</h3>
+                    <div class="relative mb-8 h-72 flex items-center justify-center">
+                        <img src="imgi_15_img-6-bottles.png" alt="Kit 6 Frascos" class="relative z-10 w-full h-full object-contain scale-110 group-hover:scale-115 transition-transform duration-700">
+                    </div>
+                    <div class="mb-8">
+                        <p class="text-sm font-bold text-slate-300 uppercase tracking-widest line-through mb-1">$1.074</p>
+                        <div class="text-8xl font-black text-emerald-600 leading-none">$49</div>
+                        <p class="text-xs font-black text-emerald-800 uppercase mt-3">Por Frasco</p>
+                    </div>
+                    <button class="w-full bg-emerald-600 text-white py-6 rounded-2xl font-black text-xl hover:bg-emerald-700 transition-all shadow-2xl flex items-center justify-center gap-3 uppercase mb-4">
+                        QUERO O DESCONTO MÁXIMO <i data-lucide="zap" class="fill-current"></i>
+                    </button>
+                    <div class="flex items-center justify-center gap-2 text-emerald-600 font-black uppercase text-xs tracking-widest">
+                        <img src="frete.png" alt="Frete" class="w-8 h-8">
+                        FRETE GRÁTIS INCLUSO
+                    </div>
+                </div>
+
+                <!-- Most Popular (3 Bottles) -->
+                <div class="bg-white border border-slate-200 rounded-[3rem] p-8 flex flex-col text-center hover:shadow-2xl transition-all group border-b-8 border-b-slate-300">
+                    <h3 class="text-lg font-bold mb-4 uppercase tracking-widest text-slate-500">Mais Popular</h3>
+                    <div class="relative mb-8 h-64 flex items-center justify-center">
+                        <img src="imgi_75_img-3-bottles-300x290.png" alt="Kit 3 Frascos" class="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform">
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-6xl font-black text-slate-900 leading-none">$69</div>
+                        <p class="text-xs font-bold text-slate-400 uppercase mt-2">Por Frasco</p>
+                    </div>
+                    <button class="w-full bg-slate-900 text-white py-5 rounded-2xl font-black text-lg hover:bg-slate-800 transition-all shadow-lg mb-4">
+                        COMPRAR AGORA
+                    </button>
+                    <div class="flex items-center justify-center gap-2 text-emerald-600 font-black uppercase text-xs tracking-widest">
+                        <i data-lucide="truck" class="w-4 h-4"></i> FRETE GRÁTIS
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-24 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-16 text-center md:text-left">
+            <div class="relative flex-shrink-0">
+                <img src="imgi_18_guarantee-badge.png" alt="Garantia de 60 Dias" class="w-56 h-56 relative z-10 animate-pulse">
+                <div class="absolute inset-0 bg-emerald-500 rounded-full blur-[80px] opacity-10"></div>
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter italic">Satisfação Garantida ou Seu Dinheiro de Volta</h2>
+                <p class="text-slate-600 text-lg leading-relaxed font-medium mb-6">
+                    Acreditamos tanto na ciência e no poder do Burn Slim que oferecemos uma garantia incondicional de 60 dias. Se você não notar diferença no seu metabolismo ou energia, nós devolvemos cada centavo. Sem burocracia.
+                </p>
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <img src="imgi_22_fda-1-2-1-1-1-1-1.png" class="h-10 opacity-50" alt="FDA">
+                    <img src="imgi_23_gmp-1-2-1-1-1-1-1.png" class="h-10 opacity-50" alt="GMP">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping Section -->
+    <section class="py-16 bg-slate-50 overflow-hidden border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="flex items-center gap-6">
+                <img src="frete.png" alt="Envio Rápido" class="w-24 h-24 object-contain">
+                <div>
+                    <h3 class="text-xl font-black uppercase italic tracking-tight">Envio Turbo Prioritário</h3>
+                    <p class="text-slate-500 font-medium">Pedidos processados em 24h com rastreamento.</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-3">
+                    <i data-lucide="shield-check" class="text-emerald-500"></i>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-700">Pagamento 100% Seguro</span>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-3">
+                    <i data-lucide="lock" class="text-orange-500"></i>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-700">Privacidade Blindada</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-footer text-slate-500 py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="mb-6 opacity-30 hover:opacity-100 transition-opacity">
-                <img src="images/imgi_1_info-logo.png" alt="Erexol Footer" class="h-6 mx-auto">
+    <footer class="bg-slate-950 text-slate-600 py-24 px-6 text-center text-xs border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <img src="logoo.png" alt="Burn Slim" class="h-12 mx-auto mb-10 brightness-0 invert opacity-50">
+            <p class="max-w-2xl mx-auto mb-12 leading-relaxed italic opacity-40">
+                Aviso: Os resultados podem variar de acordo com o metabolismo individual. Burn Slim é um suplemento dietético natural formulado para apoiar um estilo de vida saudável. Não substitui consulta médica especializada.
+            </p>
+            <div class="flex flex-wrap justify-center gap-8 mb-16 uppercase font-black tracking-[0.2em] text-[10px]">
+                <a href="#" class="hover:text-emerald-500 transition-colors">Política de Privacidade</a>
+                <a href="#" class="hover:text-emerald-500 transition-colors">Termos de Uso</a>
+                <a href="#" class="hover:text-emerald-500 transition-colors">Avisos Legais</a>
+                <a href="#" class="hover:text-emerald-500 transition-colors">Suporte</a>
             </div>
-            <div class="mb-6 text-[9px] uppercase tracking-widest font-bold opacity-60">Distributeur Agréé France</div>
-            <div class="text-[8px] space-y-1 mb-8 opacity-30 font-medium">
-                <p class="font-bold uppercase">SUMMER ALLIANCE LTD</p>
-                <p>Reg. No. 195655 | Mahe, Seychelles</p>
-            </div>
-            <div class="border-t border-white/5 pt-8 text-[8px] uppercase tracking-[0.4em] opacity-20 italic italic">
-                © 2026 Erexol™ France - Tous droits réservés.
-            </div>
+            <div class="h-px w-24 bg-white/10 mx-auto mb-10"></div>
+            <p class="uppercase tracking-[0.3em] font-bold text-[9px] opacity-30">© 2026 BurnSlim Research. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        lucide.createIcons();
 
-        let current = 0;
-        const track = document.getElementById('review-track');
-        function updateReview() {
-            const isDesktop = window.innerWidth >= 1024;
-            current = (current + 1) >= (isDesktop ? 1 : 3) ? 0 : current + 1;
-            track.style.transform = `translateX(-${current * (isDesktop ? 33.333 : 100)}%)`;
+        // Cronômetro regressivo
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+                if (--timer < 0) { timer = duration; }
+            }, 1000);
         }
-        setInterval(updateReview, 4000);
 
-        function toggleFaq(button) {
-            const item = button.parentElement;
-            const active = item.classList.contains('active');
-            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-            if (!active) item.classList.add('active');
-        }
+        window.onload = function () {
+            var time = 26 * 60 + 14,
+                display = document.querySelector('#timer');
+            startTimer(time, display);
+        };
     </script>
 </body>
 </html>

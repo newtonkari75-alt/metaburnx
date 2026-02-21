@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- [SCRIPTS DE RASTREAMENTO] -->
+    <!-- [SCRIPTS DE RASTREAMENTO - MANTIDOS] -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -17,8 +17,7 @@
     
     <!-- [SEO TÉCNICO AVANÇADO INVISÍVEL] -->
     <title>BurnSlim Official | Advanced Metabolic Support & Fat Burning Formula</title>
-    <meta name="description" content="Discover BurnSlim, the natural metabolic support formula. Optimize fat burning, manage appetite, and boost energy levels with our botanical blend. Official authorized distributor.">
-    <meta name="keywords" content="BurnSlim, weight support, metabolic formula, natural fat burner, appetite control, BurnSlim official">
+    <meta name="description" content="Unlock your metabolic potential with BurnSlim. Natural fat burning and appetite control formula. Official authorized distributor.">
     <meta name="robots" content="index, follow">
     
     <!-- JSON-LD (Rich Snippets) -->
@@ -51,10 +50,8 @@
         body { font-family: 'Manrope', sans-serif; scroll-behavior: smooth; visibility: hidden; } 
         .hero-gradient { background: linear-gradient(135deg, #215E91 0%, #0D2E4D 100%); }
         
-        /* Pricing Cards - Harmonia Cromática Total */
+        /* Pricing Cards - Harmonia Cromática Professional */
         .price-card { border-radius: 12px; border: 1px solid #e2e8f0; background: white; transition: 0.3s ease; display: flex; flex-direction: column; align-items: center; text-align: center; overflow: hidden; }
-        
-        /* Destaque usando o Azul dos Títulos conforme solicitado */
         .price-card-featured { 
             background-color: var(--primary-blue) !important; 
             color: white !important; 
@@ -64,20 +61,22 @@
             box-shadow: 0 25px 60px -12px rgba(62, 127, 177, 0.4); 
         }
         
-        .btn-cart-gray { background-color: #F1F5F9; color: #0D2E4D; border-radius: 8px; width: 100%; padding: 1.25rem; font-weight: 900; font-style: italic; transition: 0.2s; border: 1px solid #cbd5e1; }
-        .btn-cart-yellow { background-color: var(--accent-yellow); color: #0D2E4D; border-radius: 8px; width: 100%; padding: 1.25rem; font-weight: 900; font-style: italic; transition: 0.2s; }
-        .btn-cart-gray:hover, .btn-cart-yellow:hover { transform: scale(1.02); filter: brightness(1.05); }
+        .btn-cart-gray { background-color: #F1F5F9; color: #0D2E4D; border-radius: 8px; width: 100%; padding: 1.15rem; font-weight: 900; font-style: italic; border: 1px solid #cbd5e1; }
+        .btn-cart-yellow { background-color: var(--accent-yellow); color: #0D2E4D; border-radius: 8px; width: 100%; padding: 1.15rem; font-weight: 900; font-style: italic; }
+        .btn-cart-gray:hover, .btn-cart-yellow:hover { filter: brightness(1.05); transform: translateY(-1px); }
         
         .floating-anim { animation: floating 3s ease-in-out infinite; }
-        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
         
         details summary::-webkit-details-marker { display: none; }
         
-        /* Badges e Grids */
-        .badges-single-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.25rem; align-items: center; width: 100%; }
-        @media (min-width: 768px) { .badges-single-row { gap: 1.5rem; } }
+        /* Badges - Padrão 4 em cima, 1 em baixo */
+        .badges-container { display: flex; flex-direction: column; align-items: center; width: 100%; }
+        .badges-top-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; width: 100%; max-width: 400px; margin-bottom: 0.75rem; }
+        .badge-img { width: 100%; h-auto; filter: grayscale(1); opacity: 0.5; transition: 0.3s; }
+        .badge-img:hover { filter: grayscale(0); opacity: 1; }
 
-        /* Typography Standard */
+        /* Typography */
         .section-title { font-size: 2.25rem; line-height: 2.5rem; font-weight: 900; text-transform: uppercase; font-style: italic; }
         @media (min-width: 768px) { .section-title { font-size: 3.5rem; line-height: 1; } }
 
@@ -89,49 +88,50 @@
     <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-100 py-3 px-6 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <img src="images/burn_slim_official_website_167x51.webp" alt="BurnSlim Logo" class="h-10">
-            <a href="#buy" class="bg-[#3E7FB1] text-white px-5 py-2 rounded-full font-bold text-xs hover:bg-[#2d628a] transition shadow-md uppercase tracking-wider" data-i18n="nav-cta">BUY NOW</a>
+            <img src="images/burn_slim_official_website_167x51.webp" alt="BurnSlim" class="h-10">
+            <a href="#buy" class="bg-[#3E7FB1] text-white px-5 py-2 rounded-full font-bold text-xs hover:bg-[#2d628a] transition shadow-md uppercase" data-i18n="nav-cta">BUY NOW</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero-gradient text-white py-12 md:py-24 px-6 overflow-hidden">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 order-2 md:order-1 text-center md:text-left">
                 <h1 class="section-title mb-6" data-i18n="hero-title">
                     Discover How Burn Slim Supports <span class="text-[#FFFF00]">Natural Fat Burning & Metabolic Balance</span>
                 </h1>
-                <p class="text-lg md:text-xl opacity-90 mb-10 leading-relaxed max-w-xl font-medium" data-i18n="hero-desc">
+                <p class="text-lg md:text-xl opacity-90 mb-10 leading-relaxed font-medium" data-i18n="hero-desc">
                     Burn Slim is meticulously formulated with a proprietary blend of 6-potent herbs and plants backed by clinical research to help boost metabolism and promote overall wellness.
                 </p>
-                <div class="badges-single-row mb-10 max-w-sm mx-auto md:mx-0 opacity-80">
-                    <img src="images/iconvsl8-1-2-1.webp" class="w-full h-auto" alt="Seal">
-                    <img src="images/iconvsl6-1-2-1.webp" class="w-full h-auto" alt="Seal">
-                    <img src="images/iconvsl5-1-2-1.webp" class="w-full h-auto" alt="Seal">
-                    <img src="images/iconvsl9-1-2-1.webp" class="w-full h-auto" alt="Seal">
-                    <img src="images/iconvsl7-1-2-1.webp" class="w-full h-auto" alt="Seal">
+                <!-- Selos Hero em linha única -->
+                <div class="grid grid-cols-5 gap-2 mb-10 max-w-sm mx-auto md:mx-0 opacity-80">
+                    <img src="images/iconvsl8-1-2-1.webp" class="w-full h-auto">
+                    <img src="images/iconvsl6-1-2-1.webp" class="w-full h-auto">
+                    <img src="images/iconvsl5-1-2-1.webp" class="w-full h-auto">
+                    <img src="images/iconvsl9-1-2-1.webp" class="w-full h-auto">
+                    <img src="images/iconvsl7-1-2-1.webp" class="w-full h-auto">
                 </div>
-                <a href="#buy" class="inline-block bg-[#FFFF00] text-slate-900 px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition shadow-2xl uppercase italic" data-i18n="hero-cta">Get Started Now</a>
+                <a href="#buy" class="inline-block bg-[#FFFF00] text-slate-900 px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition shadow-2xl uppercase italic" data-i18n="hero-cta">Get Started Now</a>
             </div>
-            <div class="flex-1 order-1 md:order-2 flex justify-center relative">
-                <img src="images/img-3-bottles.webp" alt="BurnSlim" class="w-full max-w-sm md:max-w-md floating-anim drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]">
+            <div class="flex-1 order-1 md:order-2 flex justify-center">
+                <img src="images/img-3-bottles.webp" alt="Potes" class="w-full max-w-sm md:max-w-md floating-anim drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]">
             </div>
         </div>
     </section>
 
-    <!-- Authority Section (Title -> Smaller Doctor Photo -> Content) -->
+    <!-- Authority Section (Titulo -> Foto Menor -> Texto) -->
     <section class="py-24 px-6 bg-white border-b border-slate-50 text-center">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-title text-[#3E7FB1] mb-12" data-i18n="about-title">What Is Burn Slim?</h2>
-            <div class="flex flex-col md:flex-row items-center gap-16 max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-16 max-w-6xl mx-auto">
                 <div class="w-full md:w-1/3 flex justify-center">
-                    <img src="images/Doctor-1-683x1024.png" alt="Doctor" class="w-full max-w-[180px] md:max-w-[220px] rounded-[3rem] shadow-xl border-4 border-white">
+                    <img src="images/Doctor-1-683x1024.png" alt="Doctor" class="w-full max-w-[200px] md:max-w-[240px] rounded-[3rem] shadow-xl border-4 border-white">
                 </div>
-                <div class="w-full md:w-2/3 text-center md:text-left space-y-8 text-slate-600 text-lg leading-relaxed font-medium">
+                <div class="w-full md:w-2/3 text-center md:text-left space-y-6 text-slate-600 text-lg md:text-xl leading-relaxed">
                     <p data-i18n="about-p1">Burn Slim is a dietary supplement unlike anything you've ever experienced. Its bespoke formula is designed specifically for those seeking to feel lighter and more energized through metabolic support.</p>
-                    <p data-i18n="about-p2">It is one of the only products in the world with a blend of concentrated botanicals, metabolic activators, and gut-support nutrients.</p>
+                    <p data-i18n="about-p2">It features a powerful blend of concentrated botanicals, metabolic activators, and gut-support nutrients designed to promote sustainable health results.</p>
                     <div class="bg-slate-50 p-8 rounded-3xl border-l-8 border-[#3E7FB1] shadow-sm">
-                        <p class="font-black text-slate-900 text-xl md:text-2xl italic uppercase tracking-tighter leading-tight" data-i18n="about-highlight">Supports basal metabolism and helps maintain a healthy metabolic state naturally.</p>
+                        <p class="font-black text-slate-900 text-xl md:text-2xl italic uppercase tracking-tighter" data-i18n="about-highlight">Supports basal metabolism and helps maintain a healthy metabolic state naturally.</p>
                     </div>
                 </div>
             </div>
@@ -139,123 +139,119 @@
     </section>
 
     <!-- Key Benefits (Mobile: 2 per line) -->
-    <section class="py-24 px-6 bg-slate-50 border-y border-slate-100">
-        <div class="max-w-7xl mx-auto text-center">
+    <section class="py-24 px-6 bg-slate-50 border-y border-slate-100 text-center">
+        <div class="max-w-7xl mx-auto">
             <h2 class="section-title text-[#0D2E4D] mb-16" data-i18n="ben-title">How BurnSlim <span class="text-[#3E7FB1]">Empowers You</span></h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
-                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col items-center">
-                    <img src="images/ic1-300x300.webp" class="w-12 h-12 md:w-20 md:h-20 mb-4">
-                    <h4 class="font-black text-sm md:text-xl mb-2 text-[#3E7FB1] uppercase italic" data-i18n="ben-1-t">Fat Burn</h4>
-                    <p class="text-slate-500 text-[10px] md:text-base font-medium hidden md:block" data-i18n="ben-1-d">Targets persistent fat areas for more efficient calorie use.</p>
+                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <img src="images/ic1-300x300.webp" class="w-14 h-14 md:w-20 md:h-20 mx-auto mb-4">
+                    <h4 class="font-black text-sm md:text-xl text-[#3E7FB1] uppercase italic mb-2" data-i18n="ben-1-t">Fat Burn</h4>
+                    <p class="text-slate-500 text-xs md:text-sm hidden md:block" data-i18n="ben-1-d">Targets persistent fat areas for efficient calorie use.</p>
                 </div>
-                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col items-center">
-                    <img src="images/ic2-1024x1024.webp" class="w-12 h-12 md:w-20 md:h-20 mb-4">
-                    <h4 class="font-black text-sm md:text-xl mb-2 text-[#3E7FB1] uppercase italic" data-i18n="ben-2-t">Metabolism</h4>
-                    <p class="text-slate-500 text-[10px] md:text-base font-medium hidden md:block" data-i18n="ben-2-d">Helps the body process energy efficiently all day long.</p>
+                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <img src="images/ic2-1024x1024.webp" class="w-14 h-14 md:w-20 md:h-20 mx-auto mb-4">
+                    <h4 class="font-black text-sm md:text-xl text-[#3E7FB1] uppercase italic mb-2" data-i18n="ben-2-t">Metabolism</h4>
+                    <p class="text-slate-500 text-xs md:text-sm hidden md:block" data-i18n="ben-2-d">Helps the body process energy efficiently all day long.</p>
                 </div>
-                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col items-center">
-                    <img src="images/ic3-300x300.webp" class="w-12 h-12 md:w-20 md:h-20 mb-4">
-                    <h4 class="font-black text-sm md:text-xl mb-2 text-[#3E7FB1] uppercase italic" data-i18n="ben-3-t">Appetite</h4>
-                    <p class="text-slate-500 text-[10px] md:text-base font-medium hidden md:block" data-i18n="ben-3-d">Supports satiety and helps reduce unnecessary daily cravings.</p>
+                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <img src="images/ic3-300x300.webp" class="w-14 h-14 md:w-20 md:h-20 mx-auto mb-4">
+                    <h4 class="font-black text-sm md:text-xl text-[#3E7FB1] uppercase italic mb-2" data-i18n="ben-3-t">Appetite</h4>
+                    <p class="text-slate-500 text-xs md:text-sm hidden md:block" data-i18n="ben-3-d">Supports satiety and helps reduce daily cravings.</p>
                 </div>
-                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col items-center">
-                    <img src="images/ic4-300x300.webp" class="w-12 h-12 md:w-20 md:h-20 mb-4">
-                    <h4 class="font-black text-sm md:text-xl mb-2 text-[#3E7FB1] uppercase italic" data-i18n="ben-4-t">Energy</h4>
-                    <p class="text-slate-500 text-[10px] md:text-base font-medium hidden md:block" data-i18n="ben-4-d">Natural motivation support without artificial stimulant crashes.</p>
+                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <img src="images/ic4-300x300.webp" class="w-14 h-14 md:w-20 md:h-20 mx-auto mb-4">
+                    <h4 class="font-black text-sm md:text-xl text-[#3E7FB1] uppercase italic mb-2" data-i18n="ben-4-t">Energy</h4>
+                    <p class="text-slate-500 text-xs md:text-sm hidden md:block" data-i18n="ben-4-d">Natural motivation support without artificial stimulants.</p>
                 </div>
-                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col items-center">
-                    <img src="images/ic5-300x300.webp" class="w-12 h-12 md:w-20 md:h-20 mb-4">
-                    <h4 class="font-black text-sm md:text-xl mb-2 text-[#3E7FB1] uppercase italic" data-i18n="ben-5-t">Digestion</h4>
-                    <p class="text-slate-500 text-[10px] md:text-base font-medium hidden md:block" data-i18n="ben-5-d">Promotes gut balance, key for weight management.</p>
+                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <img src="images/ic5-300x300.webp" class="w-14 h-14 md:w-20 md:h-20 mx-auto mb-4">
+                    <h4 class="font-black text-sm md:text-xl text-[#3E7FB1] uppercase italic mb-2" data-i18n="ben-5-t">Digestion</h4>
+                    <p class="text-slate-500 text-xs md:text-sm hidden md:block" data-i18n="ben-5-d">Promotes intestinal balance for better health management.</p>
                 </div>
-                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition flex flex-col items-center">
-                    <img src="images/ic6-300x300.webp" class="w-12 h-12 md:w-20 md:h-20 mb-4">
-                    <h4 class="font-black text-sm md:text-xl mb-2 text-[#3E7FB1] uppercase italic" data-i18n="ben-6-t">100% Natural</h4>
-                    <p class="text-slate-500 text-[10px] md:text-base font-medium hidden md:block" data-i18n="ben-6-d">Safe botanical compounds produced under strict standards.</p>
+                <div class="bg-white p-6 md:p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <img src="images/ic6-300x300.webp" class="w-14 h-14 md:w-20 md:h-20 mx-auto mb-4">
+                    <h4 class="font-black text-sm md:text-xl text-[#3E7FB1] uppercase italic mb-2" data-i18n="ben-6-t">100% Natural</h4>
+                    <p class="text-slate-500 text-xs md:text-sm hidden md:block" data-i18n="ben-6-d">Safe botanical compounds produced under GMP standards.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ingredients (Minor detail) -->
-    <section class="py-24 bg-white text-center px-6 border-b">
+    <!-- Ingredients -->
+    <section class="py-24 bg-white text-center px-6">
         <h2 class="section-title text-[#3E7FB1] mb-16" data-i18n="ing-title">Botanical Synergy</h2>
         <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8">
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center">
                 <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 shadow-md border-2 border-slate-50"><img src="images/1-rhr7qg2iow42xd2kxefg4ooj956sirkqnk8o8s08ai.webp" class="w-full h-full object-cover"></div>
                 <h4 class="font-bold text-[10px] text-slate-800 uppercase italic">Cinnamon Bark</h4>
             </div>
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center">
                 <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 shadow-md border-2 border-slate-50"><img src="images/2-1-rhr7vgjj52z4uhsfnkftff51b4h9knh7cdhwdwkn3u.webp" class="w-full h-full object-cover"></div>
                 <h4 class="font-bold text-[10px] text-slate-800 uppercase italic">Bilberry Leaf</h4>
             </div>
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center">
                 <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 shadow-md border-2 border-slate-50"><img src="images/3-1-rhr7w7suna0g76ou8e7zxq9ejaqwrvhf44ezaxg83e.webp" class="w-full h-full object-cover"></div>
                 <h4 class="font-bold text-[10px] text-slate-800 uppercase italic">Green Tea</h4>
             </div>
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center">
                 <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 shadow-md border-2 border-slate-50"><img src="images/4-1-rhr7xys1d6ent25d0ng02sdac44i3lffos4igguuii.webp" class="w-full h-full object-cover"></div>
                 <h4 class="font-bold text-[10px] text-slate-800 uppercase italic">Zeaxanthin</h4>
             </div>
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center">
                 <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 shadow-md border-2 border-slate-50"><img src="images/5-1-rhr7zlzvbqnq4hrcev1hxvfbre0mkiyiwx83owf1mi.webp" class="w-full h-full object-cover"></div>
                 <h4 class="font-bold text-[10px] text-slate-800 uppercase italic">Ginkgo Biloba</h4>
             </div>
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center">
                 <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 shadow-md border-2 border-slate-50"><img src="images/6-1-rhr80salva9mmy1wjvbpk2r2hq856wmg2qkyacobui.webp" class="w-full h-full object-cover"></div>
                 <h4 class="font-bold text-[10px] text-slate-800 uppercase italic">Bacopa Monnieri</h4>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials (Destaque reforçado) -->
-    <section class="py-24 bg-[#F1F5F9] px-6">
+    <!-- Testimonials (Destaque Premium) -->
+    <section class="py-24 bg-[#F1F5F9] px-6 border-y">
         <div class="max-w-6xl mx-auto">
             <h2 class="section-title text-center mb-20 text-[#0D2E4D]" data-i18n="tes-title">Real Success Stories</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Story 1 -->
-                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition duration-300">
-                    <img src="images/BzjWpc2651678.webp" class="w-full h-72 object-cover rounded-[2rem] mb-8 shadow-inner" alt="Carla">
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center hover:-translate-y-2 transition duration-300">
+                    <img src="images/BzjWpc2651678.webp" class="testimonial-img mb-8 shadow-md" alt="Carla">
                     <p class="text-slate-600 italic mb-6 text-lg">"After the second bottle I noticed a real change. My clothes are fitting much better now. It's undeniable progress."</p>
                     <p class="font-black text-[#3E7FB1] text-sm uppercase tracking-widest">— Carla M., 37 – Orlando, FL</p>
                 </div>
-                <!-- Story 2 -->
-                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition duration-300">
-                    <img src="images/67766bfcac47fe159d0716a6.webp" class="w-full h-72 object-cover rounded-[2rem] mb-8 shadow-inner" alt="Mark">
-                    <p class="text-slate-600 italic mb-6 text-lg">"I feel more confident and lighter. It wasn't extreme, just steady and natural progress every single week."</p>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center hover:-translate-y-2 transition duration-300">
+                    <img src="images/67766bfcac47fe159d0716a6.webp" class="testimonial-img mb-8 shadow-md" alt="Mark">
+                    <p class="text-slate-600 italic mb-6 text-lg">"I feel more confident and lighter. It wasn't extreme, just steady and natural progress every week."</p>
                     <p class="font-black text-[#3E7FB1] text-sm uppercase tracking-widest">— Mark D., 38 – Phoenix, AZ</p>
                 </div>
-                <!-- Story 3 -->
-                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition duration-300">
-                    <img src="images/comp2.webp" class="w-full h-72 object-cover rounded-[2rem] mb-8 shadow-inner" alt="James">
-                    <p class="text-slate-600 italic mb-6 text-lg">"Over time, my cravings dropped and my meals felt more controlled. I'm finally back in control of my body."</p>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center hover:-translate-y-2 transition duration-300">
+                    <img src="images/comp2.webp" class="testimonial-img mb-8 shadow-md" alt="James">
+                    <p class="text-slate-600 italic mb-6 text-lg">"Over time, my cravings dropped and my meals felt more controlled. I'm finally back in control."</p>
                     <p class="font-black text-[#3E7FB1] text-sm uppercase tracking-widest">— James R., 48 – Dayton, OH</p>
                 </div>
-                <!-- Story 4 -->
-                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center group hover:-translate-y-2 transition duration-300">
-                    <img src="images/comp3.webp" class="w-full h-72 object-cover rounded-[2rem] mb-8 shadow-inner" alt="Amanda">
-                    <p class="text-slate-600 italic mb-6 text-lg">"A few weeks in and my energy is much more stable. Clothes fit loose and I feel incredible every single day."</p>
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center hover:-translate-y-2 transition duration-300">
+                    <img src="images/comp3.webp" class="testimonial-img mb-8 shadow-md" alt="Amanda">
+                    <p class="text-slate-600 italic mb-6 text-lg">"A few weeks in and my energy is much more stable. Clothes fit loose and I feel incredible every day."</p>
                     <p class="font-black text-[#3E7FB1] text-sm uppercase tracking-widest">— Amanda L., 40 – Austin, TX</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing (Exact Mirror image_5fcd00.jpg with COLOR Fix) -->
+    <!-- Pricing (Exact Layout Reference) -->
     <section id="buy" class="py-24 px-6 bg-[#0D2E4D]">
         <div class="max-w-7xl mx-auto text-center mb-16">
             <h2 class="text-white section-title mb-6" data-i18n="price-title">Select Your Supply Today!</h2>
-            <div id="countdown-timer-1" class="text-5xl md:text-7xl font-black font-poppins mb-12 text-[#FFFF00] drop-shadow-lg tracking-widest">30:00</div>
+            <div id="countdown-timer-1" class="text-5xl md:text-7xl font-black font-poppins mb-12 text-[#FFFF00] tracking-widest">30:00</div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-stretch max-w-6xl mx-auto text-center">
                 
                 <!-- BASIC -->
                 <div class="price-card p-8">
                     <h3 class="text-2xl font-black uppercase mt-4 mb-2 text-[#0D2E4D]">2 BOTTLES</h3>
-                    <p class="text-xs text-slate-400 italic mb-6">60 Day Supply</p>
-                    <img src="images/img-2-bottles.webp" class="w-40 mb-6 drop-shadow-md">
-                    <div class="flex items-start mb-6 font-black">
-                        <span class="text-2xl mt-2 text-[#0D2E4D]">$</span><span class="text-8xl text-[#0D2E4D] tracking-tighter leading-none">79</span><span class="text-[10px] self-end ml-1 mb-4 opacity-40 font-bold uppercase text-[#0D2E4D]">PER<br>BOTTLE</span>
+                    <p class="text-xs text-slate-400 italic mb-6 uppercase">60 Day Supply</p>
+                    <img src="images/img-2-bottles.webp" class="w-40 mb-6">
+                    <div class="flex items-start mb-6 text-slate-900 font-black">
+                        <span class="text-2xl mt-2">$</span><span class="text-8xl tracking-tighter leading-none">79</span><span class="text-[10px] self-end ml-1 mb-4 opacity-40 font-bold uppercase">PER<br>BOTTLE</span>
                     </div>
                     <div class="space-y-2 mb-8 text-xs font-bold text-slate-600 text-left w-full border-t border-dotted pt-4">
                         <p class="text-[#3E7FB1] uppercase italic"><i data-lucide="check-circle" class="inline w-4 h-4 mr-2"></i> YOU SAVE $200!</p>
@@ -263,18 +259,18 @@
                     </div>
                     <div class="mt-auto w-full">
                         <p class="text-sm mb-4 font-bold text-slate-700 uppercase leading-none">TOTAL: <span class="line-through opacity-30">$358</span> <b class="text-xl font-black">$158</b></p>
-                        <a href="https://www.fasttrack37.com/PM7HK3TH/2TJLB2N5/?uid=51727" class="btn-cart-gray block uppercase tracking-tighter">ADD TO CART!</a>
-                        <div class="mt-6 flex justify-center gap-1 opacity-50"><img src="images/cards-dark.webp" class="h-4"></div>
+                        <a href="https://www.fasttrack37.com/PM7HK3TH/2TJLB2N5/?uid=51727" class="btn-cart-gray block uppercase italic tracking-tighter">ADD TO CART!</a>
+                        <div class="mt-6 flex justify-center opacity-50"><img src="images/cards-dark.webp" class="h-4"></div>
                     </div>
                 </div>
 
-                <!-- BEST VALUE (6 Bottles - HIGHLIGHT BLUE #3E7FB1) -->
+                <!-- BEST VALUE (Sapphire Blue Highlight) -->
                 <div class="price-card price-card-featured p-8">
                     <h3 class="text-3xl font-black uppercase mt-4 mb-2">6 BOTTLES</h3>
-                    <p class="text-xs text-blue-100 italic mb-6">180 Day Supply</p>
+                    <p class="text-xs text-blue-100 italic mb-6 uppercase">180 Day Supply</p>
                     <img src="images/img-6-bottles.webp" class="w-52 mb-6 drop-shadow-xl">
                     <div class="flex items-start mb-6 text-white font-black">
-                        <span class="text-2xl mt-2 text-yellow-400">$</span><span class="text-9xl tracking-tighter leading-none">49</span><span class="text-[9px] self-end ml-1 mb-4 opacity-70 font-bold uppercase">PER<br>BOTTLE</span>
+                        <span class="text-2xl mt-2 text-yellow-400">$</span><span class="text-9xl tracking-tighter leading-none">49</span><span class="text-[10px] self-end ml-1 mb-4 opacity-70 font-bold uppercase">PER<br>BOTTLE</span>
                     </div>
                     <div class="space-y-2 mb-8 text-xs font-black text-left w-full border-t border-dotted border-white/20 pt-4">
                         <p class="text-yellow-400 uppercase italic"><i data-lucide="check-circle" class="inline w-4 h-4 mr-2"></i> YOU SAVE $780!</p>
@@ -282,16 +278,16 @@
                         <p class="text-white/80 uppercase"><i data-lucide="check-circle" class="inline w-4 h-4 mr-2"></i> 60 DAYS GUARANTEE</p>
                     </div>
                     <div class="mt-auto w-full">
-                        <p class="text-sm mb-4 font-bold text-white/80 uppercase">TOTAL: <span class="line-through opacity-40 font-bold">$1074</span> <b class="text-2xl text-yellow-400 font-black leading-none">$294</b></p>
+                        <p class="text-sm mb-4 font-bold">TOTAL: <span class="line-through opacity-40">$1074</span> <b class="text-2xl text-yellow-400 font-black">$294</b></p>
                         <a href="https://www.fasttrack37.com/PM7HK3TH/2TJLB2N5/?uid=51729" class="btn-cart-yellow block uppercase tracking-tighter animate-pulse shadow-xl">ADD TO CART!</a>
-                        <div class="mt-6 flex justify-center gap-1"><img src="images/cards-dark.webp" class="h-4 brightness-0 invert"></div>
+                        <div class="mt-6 flex justify-center"><img src="images/cards-dark.webp" class="h-4 brightness-0 invert"></div>
                     </div>
                 </div>
 
-                <!-- MOST POPULAR (3 Bottles) -->
+                <!-- MOST POPULAR -->
                 <div class="price-card p-8">
                     <h3 class="text-2xl font-black uppercase mt-4 mb-2 text-[#0D2E4D]">3 BOTTLES</h3>
-                    <p class="text-[10px] text-slate-400 italic mb-6">90 Day Supply</p>
+                    <p class="text-xs text-slate-400 italic mb-6 uppercase">90 Day Supply</p>
                     <img src="images/img-3-bottles-1.webp" class="w-40 mb-6 drop-shadow-md">
                     <div class="flex items-start mb-6">
                         <span class="text-2xl font-bold mt-2 text-[#0D2E4D]">$</span><span class="text-8xl text-[#0D2E4D] tracking-tighter leading-none font-black">69</span><span class="text-[10px] self-end ml-1 mb-4 opacity-40 font-bold uppercase text-[#0D2E4D]">PER<br>BOTTLE</span>
@@ -301,9 +297,9 @@
                         <p class="uppercase opacity-60"><i data-lucide="check-circle" class="inline w-4 h-4 mr-2"></i> 60 DAYS GUARANTEE</p>
                     </div>
                     <div class="mt-auto w-full">
-                        <p class="text-sm mb-4 font-bold text-slate-700 uppercase">TOTAL: <span class="line-through opacity-30 font-bold">$537</span> <b class="text-xl font-black">$207</b></p>
+                        <p class="text-sm mb-4 font-bold text-slate-700 uppercase leading-none">TOTAL: <span class="line-through opacity-30">$537</span> <b class="text-xl">$207</b></p>
                         <a href="https://www.fasttrack37.com/PM7HK3TH/2TJLB2N5/?uid=51728" class="btn-cart-gray block uppercase tracking-tighter">ADD TO CART!</a>
-                        <div class="mt-6 flex justify-center gap-1 opacity-50"><img src="images/cards-dark.webp" class="h-4"></div>
+                        <div class="mt-6 flex justify-center opacity-50"><img src="images/cards-dark.webp" class="h-4"></div>
                     </div>
                 </div>
 
@@ -311,67 +307,67 @@
         </div>
     </section>
 
-    <!-- Badges Section (image_5f48e1.png layout - 4 top, 1 bottom) -->
-    <section class="py-16 bg-white flex flex-col items-center">
+    <!-- Badges Row (image_5f48e1.png pattern: 4 on top, 1 below) -->
+    <section class="py-20 bg-white flex flex-col items-center">
         <div class="grid grid-cols-4 gap-4 md:gap-12 mb-8 items-center max-w-2xl px-6">
-            <img src="images/iconvsl8-1-2-1.webp" class="w-16 grayscale opacity-40 hover:opacity-100 transition" alt="USA">
-            <img src="images/iconvsl6-1-2-1.webp" class="w-16 grayscale opacity-40 hover:opacity-100 transition" alt="GMO">
-            <img src="images/iconvsl5-1-2-1.webp" class="w-16 grayscale opacity-40 hover:opacity-100 transition" alt="Natural">
-            <img src="images/iconvsl9-1-2-1.webp" class="w-16 grayscale opacity-40 hover:opacity-100 transition" alt="FDA">
+            <img src="images/iconvsl8-1-2-1.webp" class="badge-img" alt="USA">
+            <img src="images/iconvsl6-1-2-1.webp" class="badge-img" alt="GMO">
+            <img src="images/iconvsl5-1-2-1.webp" class="badge-img" alt="Natural">
+            <img src="images/iconvsl9-1-2-1.webp" class="badge-img" alt="FDA">
         </div>
-        <img src="images/iconvsl7-1-2-1.webp" class="w-16 grayscale opacity-40 hover:opacity-100 transition" alt="GMP">
+        <img src="images/iconvsl7-1-2-1.webp" class="badge-img" alt="GMP">
     </section>
 
-    <!-- FAQ (8 Complete Questions) -->
-    <section class="py-24 bg-slate-50 px-6 border-y border-slate-100">
+    <!-- FAQ (8 Complete Strategic Questions) -->
+    <section class="py-24 bg-slate-50 px-6 border-y">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl font-black text-center mb-16 uppercase italic text-[#3E7FB1]" data-i18n="faq-title">Frequently Asked Questions</h2>
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-16 uppercase italic text-[#3E7FB1]" data-i18n="faq-title">Frequently Asked Questions</h2>
             <div class="space-y-4">
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f1-q">Is BurnSlim safe to use?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f1-q">Is BurnSlim safe to use?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f1-a">Absolutely. BurnSlim is made with 100% natural ingredients and manufactured in the USA in a facility that follows Good Manufacturing Practices (GMP).</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f2-q">When will I see results?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f2-q">When will I see results?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f2-a">Many users report energy changes in weeks, but for optimal results, 3 months of consistent use is recommended.</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f3-q">Strict diet or exercise needed?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f3-q">Strict diet or exercise needed?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f3-a">No extreme diets are necessary. BurnSlim works with your body's natural processes. Healthy choices will simply amplify your progress.</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f4-q">Can I use with other supplements?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f4-q">Can I use with other supplements?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f4-a">Yes, but avoid overlapping identical botanical ingredients. Consult your provider if unsure.</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f5-q">How many bottles should I order?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f5-q">How many bottles should I order?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f5-a">For the best experience, we recommend starting with a 3 or 6-month supply for full metabolic balance.</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f6-q">What if it doesn't work for me?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f6-q">What if it doesn't work for me?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f6-a">We believe in BurnSlim, but offer a 60-day money-back guarantee for your complete peace of mind.</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f7-q">How fast is delivery?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f7-q">How fast is delivery?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f7-a">Orders process in 2-3 days. Delivery typically takes 5-7 days (US) or 10-12 days (International).</div>
                 </details>
                 <details class="group bg-white p-7 rounded-2xl border border-slate-200 shadow-sm">
-                    <summary class="font-black cursor-pointer list-none flex justify-between items-center text-slate-800 uppercase italic text-sm md:text-base"><span data-i18n="f8-q">What's the best way to take it?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
+                    <summary class="font-black cursor-pointer list-none flex justify-between items-center uppercase italic text-sm md:text-base"><span data-i18n="f8-q">What's the best way to take it?</span> <i data-lucide="chevron-down" class="group-open:rotate-180 transition text-[#3E7FB1]"></i></summary>
                     <div class="mt-4 text-slate-500 text-sm border-t pt-4 leading-relaxed font-medium" data-i18n="f8-a">Take 2 capsules daily with a glass of water, preferably 30 minutes before your first meal.</div>
                 </details>
             </div>
         </div>
     </section>
 
-    <!-- FINAL OFFER (Benefits -> Image -> Button -> Security) -->
+    <!-- FINAL OFFER (image_5f4901.png layout: Benefits -> Image -> Button) -->
     <section class="py-24 px-6 bg-[#0D2E4D] text-white overflow-hidden border-t-8 border-[#FFFF00]">
         <div class="max-w-4xl mx-auto flex flex-col items-center">
             
-            <h2 class="text-4xl md:text-6xl font-black uppercase italic text-center mb-16 tracking-tighter" data-i18n="off-f-title">Exclusive Limited Offer!</h2>
+            <h2 class="text-4xl md:text-6xl font-black uppercase italic text-center mb-16" data-i18n="off-f-title">Exclusive Limited Offer!</h2>
 
             <div class="space-y-6 mb-16 w-full text-center">
                 <div class="flex items-center gap-4 text-lg md:text-3xl font-black uppercase italic justify-center">
-                    <i data-lucide="truck" class="text-yellow-400 w-8 h-8 shrink-0"></i> <span data-i18n="off-f-3">FREE SHIPPING TODAY</span>
+                    <i data-lucide="truck" class="text-yellow-400 w-8 h-8 shrink-0"></i> <span data-i18n="off-f-3">FREE SHIPPING INCLUDED TODAY</span>
                 </div>
                 <div class="flex items-center gap-4 text-lg md:text-3xl font-black uppercase italic justify-center">
                     <i data-lucide="gift" class="text-yellow-400 w-8 h-8 shrink-0"></i> <span data-i18n="off-f-4">2 FREE BONUSES INCLUDED</span>
@@ -381,9 +377,9 @@
                 </div>
             </div>
 
-            <!-- Image Before Button as requested -->
+            <!-- Foto dos potes ANTES do botão -->
             <div class="w-full max-w-sm md:max-w-md mx-auto mb-12">
-                <img src="images/img-3-bottles.webp" alt="Final Bundle" class="w-full drop-shadow-[0_20px_80px_rgba(255,255,0,0.4)]">
+                <img src="images/img-3-bottles.webp" alt="Bundle" class="w-full drop-shadow-[0_20px_80px_rgba(255,255,0,0.4)]">
             </div>
 
             <div class="w-full text-center space-y-8">
@@ -398,15 +394,15 @@
         </div>
     </section>
 
-    <!-- Footer Compliant Google Ads 2026 -->
+    <!-- Footer Compliant -->
     <footer class="bg-slate-950 text-slate-600 py-24 px-6 text-center text-[10px] md:text-xs leading-relaxed">
         <div class="max-w-5xl mx-auto space-y-10">
             <div class="uppercase font-black tracking-[0.3em] opacity-40 mb-10 text-[11px]">Independent Authorized Distributor</div>
             
             <img src="images/refs-1024x194.webp" class="h-8 mx-auto brightness-0 invert opacity-20 mb-10">
             
-            <div class="space-y-6 px-10 italic opacity-30 leading-relaxed font-medium">
-                <p data-i18n="disc-1">Results vary by individual. This product is not intended to diagnose, treat, or prevent any disease.</p>
+            <div class="space-y-6 px-10 italic opacity-30 leading-relaxed font-medium text-center">
+                <p data-i18n="disc-1">Results vary by individual. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
                 <p data-i18n="disc-2">Statements not evaluated by the FDA. Commitment and individual discipline are required for metabolic results.</p>
             </div>
 
@@ -426,14 +422,13 @@
     <script>
         const translations = {
             en: { 
-                "nav-cta": "BUY NOW", "hero-title": "Discover How Burn Slim Supports Natural Fat Burning & Metabolic Balance", "hero-desc": "Burn Slim is meticulously formulated with a proprietary blend of 6-potent herbs and plants backed by clinical research to support metabolism and general well-being.", "hero-cta": "Get Special Offer",
-                "about-title": "What Is Burn Slim?", "about-highlight": "Support basal metabolism efficiently.",
-                "price-title": "Select Your Supply Today!", "save-1": "SAVE $200!", "save-2": "SAVE $330!", "save-3": "SAVE $780!", "add": "ADD TO CART!",
+                "nav-cta": "BUY NOW", "hero-title": "Discover How Burn Slim Supports Natural Fat Burning & Metabolic Balance", "hero-cta": "Get Special Offer",
+                "about-title": "What Is Burn Slim?", "price-title": "Select Your Supply Today!", "save-1": "SAVE $200!", "save-3": "SAVE $780!", "add": "ADD TO CART!",
                 "off-f-cta": "CLAIM SPECIAL OFFER NOW!", "off-f-3": "FREE SHIPPING INCLUDED TODAY", "off-f-4": "2 FREE BONUSES INCLUDED"
             },
             pt: { 
-                "nav-cta": "COMPRAR AGORA", "hero-title": "Descubra como o Burn Slim apoia a Queima de Gordura e o Equilíbrio Metabólico", "hero-cta": "Resgatar Oferta",
-                "about-title": "O que é o Burn Slim?", "price-title": "Selecione o seu Pacote Hoje!", "save-1": "ECONOMIZE $200!", "save-2": "ECONOMIZE $330!", "save-3": "ECONOMIZE $780!", "add": "ADICIONAR AO CARRINHO!",
+                "nav-cta": "COMPRAR AGORA", "hero-title": "Apoia a Queima de Gordura e o Equilíbrio Metabólico", "hero-cta": "Resgatar Oferta",
+                "about-title": "O que é o Burn Slim?", "price-title": "Selecione o seu Pacote Hoje!", "save-1": "ECONOMIZE $200!", "save-3": "ECONOMIZE $780!", "add": "ADICIONAR AO CARRINHO!",
                 "off-f-cta": "RESGATAR OFERTA AGORA!", "off-f-3": "FRETE GRÁTIS INCLUSO HOJE", "off-f-4": "2 BÔNUS GRÁTIS INCLUÍDOS"
             }
         };
